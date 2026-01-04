@@ -6,7 +6,7 @@ import {
 	SelectControl,
 } from '@wordpress/components';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { useState } from 'react';
+import { useState } from '@wordpress/element';
 import { __ } from '@wordpress/i18n';
 
 /**

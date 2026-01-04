@@ -9,12 +9,15 @@
 		"@wordpress/block-editor": "^15.10.0",
 		"@wordpress/blocks": "^15.10.0",
 		"@wordpress/browserslist-config": "^6.37.0",
-		"@wordpress/components": "^28.13.0",
+		"@wordpress/components": "^31.0.0",
 		"@wordpress/element": "^6.37.0",
-		"@wordpress/i18n": "^6.10.0"
+		"@wordpress/eslint-plugin": "^23.0.0",
+		"@wordpress/i18n": "^6.10.0",
+		"@wordpress/scripts": "^31.2.0",
+		"react": "^19.2.3",
+		"react-dom": "^19.2.3"
 	},
 	"devDependencies": {
-		"@wordpress/env": "^10.37.0",
-		"@wordpress/scripts": "^31.2.0"
+		"@wordpress/env": "^10.37.0"
 	}
 }

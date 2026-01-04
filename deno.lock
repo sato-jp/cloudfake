@@ -4,14 +4,17 @@
     "jsr:@pixelium/wp-readme@^2.0.5": "2.0.5",
     "jsr:@std/internal@^1.0.10": "1.0.12",
     "jsr:@std/path@1": "1.1.2",
-    "npm:@wordpress/block-editor@^15.10.0": "15.10.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_postcss@8.5.6",
-    "npm:@wordpress/blocks@^15.10.0": "15.10.0_react@18.3.1",
+    "npm:@wordpress/block-editor@^15.10.0": "15.10.0_react@19.2.3_react-dom@19.2.3__react@19.2.3_postcss@8.5.6",
+    "npm:@wordpress/blocks@^15.10.0": "15.10.0_react@19.2.3",
     "npm:@wordpress/browserslist-config@^6.37.0": "6.37.0",
-    "npm:@wordpress/components@^28.13.0": "28.13.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_@emotion+react@11.14.0__react@18.3.1",
+    "npm:@wordpress/components@31": "31.0.0_react@19.2.3_react-dom@19.2.3__react@19.2.3_@emotion+react@11.14.0__react@19.2.3",
     "npm:@wordpress/element@^6.37.0": "6.37.0_@types+react@18.3.27_react@18.3.1",
     "npm:@wordpress/env@^10.37.0": "10.37.0",
+    "npm:@wordpress/eslint-plugin@23": "23.0.0_@babel+core@7.25.7_eslint@8.57.1_@typescript-eslint+parser@6.21.0__eslint@8.57.1_eslint-plugin-import@2.32.0__eslint@8.57.1_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_eslint-plugin-jest@27.9.0__@typescript-eslint+eslint-plugin@6.21.0___@typescript-eslint+parser@6.21.0____eslint@8.57.1___eslint@8.57.1__eslint@8.57.1__@typescript-eslint+parser@6.21.0___eslint@8.57.1__jest@29.7.0_eslint-config-prettier@8.10.2__eslint@8.57.1",
     "npm:@wordpress/i18n@^6.10.0": "6.10.0",
-    "npm:@wordpress/scripts@^31.2.0": "31.2.0_@playwright+test@1.57.0_@wordpress+env@10.37.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_react-refresh@0.14.2_webpack@5.104.1__acorn@8.15.0_webpack-dev-server@4.15.2__webpack@5.104.1___acorn@8.15.0__@types+express@4.17.25_@babel+core@7.25.7_eslint@8.57.1_jest@29.7.0_npm-package-json-lint@6.4.0__ajv@6.12.6_postcss@8.5.6_stylelint@16.26.1__@csstools+css-tokenizer@3.0.4__@csstools+css-parser-algorithms@3.0.5___@csstools+css-tokenizer@3.0.4__postcss-selector-parser@7.1.1__postcss@8.5.6_sass@1.97.1"
+    "npm:@wordpress/scripts@^31.2.0": "31.2.0_@playwright+test@1.57.0_@wordpress+env@10.37.0_react@19.2.3_react-dom@19.2.3__react@19.2.3_react-refresh@0.14.2_webpack@5.104.1__acorn@8.15.0_webpack-dev-server@4.15.2__webpack@5.104.1___acorn@8.15.0__@types+express@4.17.25_@babel+core@7.25.7_eslint@8.57.1_jest@29.7.0_npm-package-json-lint@6.4.0__ajv@6.12.6_postcss@8.5.6_stylelint@16.26.1__@csstools+css-tokenizer@3.0.4__@csstools+css-parser-algorithms@3.0.5___@csstools+css-tokenizer@3.0.4__postcss-selector-parser@7.1.1__postcss@8.5.6_sass@1.97.1",
+    "npm:react-dom@^19.2.3": "19.2.3_react@19.2.3",
+    "npm:react@^19.2.3": "19.2.3"
   },
   "jsr": {
     "@pixelium/wp-readme@2.0.5": {
@@ -41,22 +44,22 @@
     "@ariakit/core@0.4.17": {
       "integrity": "sha512-OmbUcVZgmQw0AvpX5urCAi3KtEuD30DG8W8gpQVzFpCUWUtJ21bmc6a4s2rm2g1oKPIVShy61FGLtKdKLaTG6g=="
     },
-    "@ariakit/react-core@0.4.20_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@ariakit/react-core@0.4.20_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-4rfmaKgSIctHRDrA4wt8MLSI4rNA6wyD7XSTShghHrJfDEXujuOoZqvmPjtMr///kWfW9OV9USOOn8ie/7H/nw==",
       "dependencies": [
         "@ariakit/core",
         "@floating-ui/dom",
-        "react",
-        "react-dom",
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3",
         "use-sync-external-store"
       ]
     },
-    "@ariakit/react@0.4.20_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@ariakit/react@0.4.20_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-1X44x3co7MInk5SV4lSvRdy8Nwrt56YNBreKPkcZ/LlwdmY2/2r4A26I7Kzhv+VYIxDTavZYrqOlWnix5ojceg==",
       "dependencies": [
         "@ariakit/react-core",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
     "@asamuzakjp/css-color@3.2.0_@csstools+css-parser-algorithms@3.0.5__@csstools+css-tokenizer@3.0.4_@csstools+css-tokenizer@3.0.4": {
@@ -1029,11 +1032,8 @@
         "@babel/plugin-transform-typescript"
       ]
     },
-    "@babel/runtime@7.25.7": {
-      "integrity": "sha512-FjoyLe754PMiYsFaN5C94ttGiOmBNYTf6pLr4xXHAT5uctHb092PBszndLDR5XA/jghQvn4n7JMHl7dmTgbm9w==",
-      "dependencies": [
-        "regenerator-runtime"
-      ]
+    "@babel/runtime@7.28.4": {
+      "integrity": "sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ=="
     },
     "@babel/template@7.27.2": {
       "integrity": "sha512-LPDZ85aEJyYSd18/DkjNh4/y1ntkE5KwUHWTiqgRxruuZL2F1yuHligVHLvcHY2vMHXttKFpJn6LwfI7cw7ODw==",
@@ -1144,15 +1144,15 @@
     "@dual-bundle/import-meta-resolve@4.2.1": {
       "integrity": "sha512-id+7YRUgoUX6CgV0DtuhirQWodeeA7Lf4i2x71JS/vtA5pRb/hIGWlw+G6MeXvsM+MXrz0VAydTGElX1rAfgPg=="
     },
-    "@emnapi/core@1.7.1": {
-      "integrity": "sha512-o1uhUASyo921r2XtHYOHy7gdkGLge8ghBEQHMWmyJFoXlpU58kIrhhN3w26lpQb6dspetweapMn2CSNwQ8I4wg==",
+    "@emnapi/core@1.8.1": {
+      "integrity": "sha512-AvT9QFpxK0Zd8J0jopedNm+w/2fIzvtPKPjqyw9jwvBaReTTqPBk9Hixaz7KbjimP+QNz605/XnjFcDAL2pqBg==",
       "dependencies": [
         "@emnapi/wasi-threads",
         "tslib@2.8.1"
       ]
     },
-    "@emnapi/runtime@1.7.1": {
-      "integrity": "sha512-PVtJr5CmLwYAU9PZDMITZoR5iAOShYREoR45EyyLrbntV50mdePTgUn4AmOw90Ifcj+x2kRjdzr1HP3RrNiHGA==",
+    "@emnapi/runtime@1.8.1": {
+      "integrity": "sha512-mehfKSMWjjNol8659Z8KxEMrdSJDDot5SXMq00dM8BN4o+CLNXQ0xH2V7EchNHV4RmbZLmmPdEaXZc5H2FXmDg==",
       "dependencies": [
         "tslib@2.8.1"
       ]
@@ -1211,7 +1211,7 @@
     "@emotion/memoize@0.9.0": {
       "integrity": "sha512-30FAj7/EoJ5mwVPOWhAyCX+FPfMDrVecJAM+Iw9NRoSl4BBAQeqj4cApHHUXOVvIPgLVDsCFoz/hGD+5QQD1GQ=="
     },
-    "@emotion/react@11.14.0_react@18.3.1": {
+    "@emotion/react@11.14.0_react@19.2.3": {
       "integrity": "sha512-O000MLDBDdk/EohJPFUqvnp4qnHeYkVP5B0xEG0D/L7cOKP9kefu2DXn8dj74cQfsEzUqh+sr1RzFqiL1o+PpA==",
       "dependencies": [
         "@babel/runtime",
@@ -1222,7 +1222,7 @@
         "@emotion/utils",
         "@emotion/weak-memoize",
         "hoist-non-react-statics",
-        "react"
+        "react@19.2.3"
       ]
     },
     "@emotion/serialize@1.3.3": {
@@ -1238,7 +1238,7 @@
     "@emotion/sheet@1.4.0": {
       "integrity": "sha512-fTBW9/8r2w3dXWYM4HCB1Rdp8NLibOw2+XELH5m5+AkWiL/KqYX6dc0kKYlaYyKjrQ6ds33MCdMPEwgs2z1rqg=="
     },
-    "@emotion/styled@11.14.1_@emotion+react@11.14.0__react@18.3.1_react@18.3.1": {
+    "@emotion/styled@11.14.1_@emotion+react@11.14.0__react@19.2.3_react@19.2.3": {
       "integrity": "sha512-qEEJt42DuToa3gurlH4Qqc1kVpNq8wO8cJtDzU46TjlzWjDlsVyevtYCRijVq3SrHsROS+gVQ8Fnea108GnKzw==",
       "dependencies": [
         "@babel/runtime",
@@ -1248,16 +1248,16 @@
         "@emotion/serialize",
         "@emotion/use-insertion-effect-with-fallbacks",
         "@emotion/utils",
-        "react"
+        "react@19.2.3"
       ]
     },
     "@emotion/unitless@0.10.0": {
       "integrity": "sha512-dFoMUuQA20zvtVTuxZww6OHoJYgrzfKM1t52mVySDJnMSEa08ruEvdYQbhvyu6soU+NeLVd3yKfTfT0NeV6qGg=="
     },
-    "@emotion/use-insertion-effect-with-fallbacks@1.2.0_react@18.3.1": {
+    "@emotion/use-insertion-effect-with-fallbacks@1.2.0_react@19.2.3": {
       "integrity": "sha512-yJMtVdH59sxi/aVJBpk9FQq+OR8ll5GT8oWd57UpeaKEVGab41JWaCFA7FRLoMLloOZF/c/wsPoe+bfGmRKgDg==",
       "dependencies": [
-        "react"
+        "react@19.2.3"
       ]
     },
     "@emotion/utils@1.4.2": {
@@ -1314,12 +1314,12 @@
         "@floating-ui/utils"
       ]
     },
-    "@floating-ui/react-dom@2.0.8_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@floating-ui/react-dom@2.0.8_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-HOdqOt3R3OGeTKidaLvJKcgg75S6tibQ3Tif4eyd91QnIJWr0NLvoXFpJA/j8HqkFSL68GDca9AuyWEHlhyClw==",
       "dependencies": [
         "@floating-ui/dom",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
     "@floating-ui/utils@0.2.10": {
@@ -2304,19 +2304,19 @@
     "@radix-ui/primitive@1.1.3": {
       "integrity": "sha512-JTF99U/6XIjCBo0wqkU5sK10glYe27MRRsfwoiq5zzOEZLHU3A3KCMa5X/azekYRCJ0HlwI0crAXS/5dEHTzDg=="
     },
-    "@radix-ui/react-compose-refs@1.1.2_react@18.3.1": {
+    "@radix-ui/react-compose-refs@1.1.2_react@19.2.3": {
       "integrity": "sha512-z4eqJvfiNnFMHIIvXP3CY57y2WJs5g2v3X0zm9mEJkrkNv4rDxu+sg9Jh8EkXyeqBkB7SOcboo9dMVqhyrACIg==",
       "dependencies": [
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@radix-ui/react-context@1.1.2_react@18.3.1": {
+    "@radix-ui/react-context@1.1.2_react@19.2.3": {
       "integrity": "sha512-jCi/QKUM2r1Ju5a3J64TH2A5SpKAgh0LpknyqdQ4m6DCV0xJ2HG1xARRwNGPQfi1SLdLWZ1OJz6F4OMBBNiGJA==",
       "dependencies": [
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@radix-ui/react-dialog@1.1.15_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@radix-ui/react-dialog@1.1.15_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-TCglVRtzlffRNxRMEyR36DGBLJpeusFcgMVD9PZEzAKnUs1lKCgX5u9BmC2Yg+LL9MgZDugFFs1Vl+Jp4t/PGw==",
       "dependencies": [
         "@radix-ui/primitive",
@@ -2332,12 +2332,12 @@
         "@radix-ui/react-slot",
         "@radix-ui/react-use-controllable-state",
         "aria-hidden",
-        "react",
-        "react-dom",
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3",
         "react-remove-scroll"
       ]
     },
-    "@radix-ui/react-dismissable-layer@1.1.11_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@radix-ui/react-dismissable-layer@1.1.11_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-Nqcp+t5cTB8BinFkZgXiMJniQH0PsUt2k51FUhbdfeKvc4ACcG2uQniY/8+h1Yv6Kza4Q7lD7PQV0z0oicE0Mg==",
       "dependencies": [
         "@radix-ui/primitive",
@@ -2345,140 +2345,140 @@
         "@radix-ui/react-primitive",
         "@radix-ui/react-use-callback-ref",
         "@radix-ui/react-use-escape-keydown",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
-    "@radix-ui/react-focus-guards@1.1.3_react@18.3.1": {
+    "@radix-ui/react-focus-guards@1.1.3_react@19.2.3": {
       "integrity": "sha512-0rFg/Rj2Q62NCm62jZw0QX7a3sz6QCQU0LpZdNrJX8byRGaGVTqbrW9jAoIAHyMQqsNpeZ81YgSizOt5WXq0Pw==",
       "dependencies": [
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@radix-ui/react-focus-scope@1.1.7_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@radix-ui/react-focus-scope@1.1.7_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-t2ODlkXBQyn7jkl6TNaw/MtVEVvIGelJDCG41Okq/KwUsJBwQ4XVZsHAVUkK4mBv3ewiAS3PGuUWuY2BoK4ZUw==",
       "dependencies": [
         "@radix-ui/react-compose-refs",
         "@radix-ui/react-primitive",
         "@radix-ui/react-use-callback-ref",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
-    "@radix-ui/react-id@1.1.1_react@18.3.1": {
+    "@radix-ui/react-id@1.1.1_react@19.2.3": {
       "integrity": "sha512-kGkGegYIdQsOb4XjsfM97rXsiHaBwco+hFI66oO4s9LU+PLAC5oJ7khdOVFxkhsmlbpUqDAvXw11CluXP+jkHg==",
       "dependencies": [
         "@radix-ui/react-use-layout-effect",
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@radix-ui/react-portal@1.1.9_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@radix-ui/react-portal@1.1.9_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-bpIxvq03if6UNwXZ+HTK71JLh4APvnXntDc6XOX8UVq4XQOVl7lwok0AvIl+b8zgCw3fSaVTZMpAPPagXbKmHQ==",
       "dependencies": [
         "@radix-ui/react-primitive",
         "@radix-ui/react-use-layout-effect",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
-    "@radix-ui/react-presence@1.1.5_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@radix-ui/react-presence@1.1.5_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-/jfEwNDdQVBCNvjkGit4h6pMOzq8bHkopq458dPt2lMjx+eBQUohZNG9A7DtO/O5ukSbxuaNGXMjHicgwy6rQQ==",
       "dependencies": [
         "@radix-ui/react-compose-refs",
         "@radix-ui/react-use-layout-effect",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
-    "@radix-ui/react-primitive@2.1.3_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@radix-ui/react-primitive@2.1.3_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-m9gTwRkhy2lvCPe6QJp4d3G1TYEUHn/FzJUtq9MjH46an1wJU+GdoGC5VLof8RX8Ft/DlpshApkhswDLZzHIcQ==",
       "dependencies": [
         "@radix-ui/react-slot",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
-    "@radix-ui/react-slot@1.2.3_react@18.3.1": {
+    "@radix-ui/react-slot@1.2.3_react@19.2.3": {
       "integrity": "sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==",
       "dependencies": [
         "@radix-ui/react-compose-refs",
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@radix-ui/react-use-callback-ref@1.1.1_react@18.3.1": {
+    "@radix-ui/react-use-callback-ref@1.1.1_react@19.2.3": {
       "integrity": "sha512-FkBMwD+qbGQeMu1cOHnuGB6x4yzPjho8ap5WtbEJ26umhgqVXbhekKUQO+hZEL1vU92a3wHwdp0HAcqAUF5iDg==",
       "dependencies": [
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@radix-ui/react-use-controllable-state@1.2.2_react@18.3.1": {
+    "@radix-ui/react-use-controllable-state@1.2.2_react@19.2.3": {
       "integrity": "sha512-BjasUjixPFdS+NKkypcyyN5Pmg83Olst0+c6vGov0diwTEo6mgdqVR6hxcEgFuh4QrAs7Rc+9KuGJ9TVCj0Zzg==",
       "dependencies": [
         "@radix-ui/react-use-effect-event",
         "@radix-ui/react-use-layout-effect",
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@radix-ui/react-use-effect-event@0.0.2_react@18.3.1": {
+    "@radix-ui/react-use-effect-event@0.0.2_react@19.2.3": {
       "integrity": "sha512-Qp8WbZOBe+blgpuUT+lw2xheLP8q0oatc9UpmiemEICxGvFLYmHm9QowVZGHtJlGbS6A6yJ3iViad/2cVjnOiA==",
       "dependencies": [
         "@radix-ui/react-use-layout-effect",
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@radix-ui/react-use-escape-keydown@1.1.1_react@18.3.1": {
+    "@radix-ui/react-use-escape-keydown@1.1.1_react@19.2.3": {
       "integrity": "sha512-Il0+boE7w/XebUHyBjroE+DbByORGR9KKmITzbR7MyQ4akpORYP/ZmbhAr0DG7RmmBqoOnZdy2QlvajJ2QA59g==",
       "dependencies": [
         "@radix-ui/react-use-callback-ref",
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@radix-ui/react-use-layout-effect@1.1.1_react@18.3.1": {
+    "@radix-ui/react-use-layout-effect@1.1.1_react@19.2.3": {
       "integrity": "sha512-RbJRS4UWQFkzHTTwVymMTUv8EqYhOp8dOOviLj2ugtTiXRaRQS7GLGxZTLL1jWhMeoSCf5zmcZkqTl9IiYfXcQ==",
       "dependencies": [
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@react-spring/animated@9.7.5_react@18.3.1": {
+    "@react-spring/animated@9.7.5_react@19.2.3": {
       "integrity": "sha512-Tqrwz7pIlsSDITzxoLS3n/v/YCUHQdOIKtOJf4yL6kYVSDTSmVK1LI1Q3M/uu2Sx4X3pIWF3xLUhlsA6SPNTNg==",
       "dependencies": [
         "@react-spring/shared",
         "@react-spring/types",
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@react-spring/core@9.7.5_react@18.3.1": {
+    "@react-spring/core@9.7.5_react@19.2.3": {
       "integrity": "sha512-rmEqcxRcu7dWh7MnCcMXLvrf6/SDlSokLaLTxiPlAYi11nN3B5oiCUAblO72o+9z/87j2uzxa2Inm8UbLjXA+w==",
       "dependencies": [
         "@react-spring/animated",
         "@react-spring/shared",
         "@react-spring/types",
-        "react"
+        "react@19.2.3"
       ]
     },
     "@react-spring/rafz@9.7.5": {
       "integrity": "sha512-5ZenDQMC48wjUzPAm1EtwQ5Ot3bLIAwwqP2w2owG5KoNdNHpEJV263nGhCeKKmuA3vG2zLLOdu3or6kuDjA6Aw=="
     },
-    "@react-spring/shared@9.7.5_react@18.3.1": {
+    "@react-spring/shared@9.7.5_react@19.2.3": {
       "integrity": "sha512-wdtoJrhUeeyD/PP/zo+np2s1Z820Ohr/BbuVYv+3dVLW7WctoiN7std8rISoYoHpUXtbkpesSKuPIw/6U1w1Pw==",
       "dependencies": [
         "@react-spring/rafz",
         "@react-spring/types",
-        "react"
+        "react@19.2.3"
       ]
     },
     "@react-spring/types@9.7.5": {
       "integrity": "sha512-HVj7LrZ4ReHWBimBvu2SKND3cDVUPWKLqRTmWe/fNY6o1owGOX0cAHbdPDTMelgBlVbrTKrre6lFkhqGZErK/g=="
     },
-    "@react-spring/web@9.7.5_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@react-spring/web@9.7.5_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-lmvqGwpe+CSttsWNZVr+Dg62adtKhauGwLyGE/RRyZ8AAMLgb9x3NDMA5RMElXo+IMyTkPp7nxTB8ZQlmhb6JQ==",
       "dependencies": [
         "@react-spring/animated",
         "@react-spring/core",
         "@react-spring/shared",
         "@react-spring/types",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
     "@rtsao/scc@1.1.0": {
@@ -2852,9 +2852,6 @@
       "dependencies": [
         "@types/node"
       ]
-    },
-    "@types/gradient-parser@0.1.3": {
-      "integrity": "sha512-XDbrTSBlQV9nxE1GiDL3FaOPy4G/KaJkhDutBX48Kg8CYZMBARyyDFGCWfWJn4pobmInmwud1xxH7VJMAr0CKQ=="
     },
     "@types/gradient-parser@1.1.0": {
       "integrity": "sha512-SaEcbgQscHtGJ1QL+ajgDTmmqU2f6T+00jZRcFlVHUW2Asivc84LNUev/UQFyu117AsdyrtI+qpwLvgjJXJxmw=="
@@ -3281,11 +3278,11 @@
     "@use-gesture/core@10.3.1": {
       "integrity": "sha512-WcINiDt8WjqBdUXye25anHiNxPc0VOrlT8F6LLkU6cycrOGUDyY/yyFmsg3k8i5OLvv25llc0QC45GhR/C8llw=="
     },
-    "@use-gesture/react@10.3.1_react@18.3.1": {
+    "@use-gesture/react@10.3.1_react@19.2.3": {
       "integrity": "sha512-Yy19y6O2GJq8f7CHf7L0nxL8bf4PZCPaVOCgJrusOeFHY1LvHgYXnmnXg6N5iwAnbgbZCDjo60SiM6IPJi9C5g==",
       "dependencies": [
         "@use-gesture/core",
-        "react"
+        "react@19.2.3"
       ]
     },
     "@webassemblyjs/ast@1.14.1": {
@@ -3440,7 +3437,7 @@
         "@wordpress/warning",
         "browserslist",
         "core-js",
-        "react"
+        "react@18.3.1"
       ]
     },
     "@wordpress/base-styles@6.13.0": {
@@ -3449,7 +3446,7 @@
     "@wordpress/blob@4.37.0": {
       "integrity": "sha512-R0Dr8WkRKUszHNcif7zaCPUDmMSOOOsfC5as8kNMm8EKFPKh24FsB4LWryljafji2ZWwNPQ6x+eGUqpJwmMq9w=="
     },
-    "@wordpress/block-editor@15.10.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_postcss@8.5.6": {
+    "@wordpress/block-editor@15.10.0_react@19.2.3_react-dom@19.2.3__react@19.2.3_postcss@8.5.6": {
       "integrity": "sha512-P8SXWUPEs3OovtlpbXJmC+4an0jolgdC+toaknOvNi1o3SAH44G8o4NYyXMgyhr5ub/+hsRQplEjInFJ/SZ+iA==",
       "dependencies": [
         "@react-spring/web",
@@ -3460,7 +3457,7 @@
         "@wordpress/block-serialization-default-parser",
         "@wordpress/blocks",
         "@wordpress/commands",
-        "@wordpress/components@31.0.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_@emotion+react@11.14.0__react@18.3.1",
+        "@wordpress/components",
         "@wordpress/compose",
         "@wordpress/data",
         "@wordpress/dataviews",
@@ -3501,9 +3498,9 @@
         "postcss",
         "postcss-prefix-selector",
         "postcss-urlrebase",
-        "react",
+        "react@19.2.3",
         "react-autosize-textarea",
-        "react-dom",
+        "react-dom@19.2.3_react@19.2.3",
         "react-easy-crop",
         "remove-accents"
       ]
@@ -3511,7 +3508,7 @@
     "@wordpress/block-serialization-default-parser@5.37.0": {
       "integrity": "sha512-fLUHChZv5sjbX+vkn2EJuEuUdAvCfx1tdmCuTi94O43/AsQc8u6sva7gtd59uttiJXKkLS9sPiM8oaoXCMb8Tw=="
     },
-    "@wordpress/blocks@15.10.0_react@18.3.1": {
+    "@wordpress/blocks@15.10.0_react@19.2.3": {
       "integrity": "sha512-Bf5sp9QfifDpUsdjh5Vffjdt+SUfTAZJVFsEqN1GqB9Xfh0bXMXx0VtRjgqtdNdGd+0GX9WUhm3IVVizBCcyLw==",
       "dependencies": [
         "@wordpress/autop",
@@ -3535,7 +3532,7 @@
         "hpq",
         "is-plain-object@5.0.0",
         "memize",
-        "react",
+        "react@19.2.3",
         "react-is@18.3.1",
         "remove-accents",
         "showdown",
@@ -3546,11 +3543,11 @@
     "@wordpress/browserslist-config@6.37.0": {
       "integrity": "sha512-L//FRak9bo+sDLAignC4QkhITHgeFVlL0C4lWI/AM+AIHKGrHT4LOdwwNpYWMkkztW9rxHRptGkF/JDxuCakxQ=="
     },
-    "@wordpress/commands@1.37.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@wordpress/commands@1.37.0_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-1oosAowqYxo0sQ7IyFfXeCsLEDQaZhx6eCpucMDH9IX8KtxudRfqYSc6StTfKR4kXntce4yBI4h9cA7UyX4zdA==",
       "dependencies": [
         "@wordpress/base-styles",
-        "@wordpress/components@31.0.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_@emotion+react@11.14.0__react@18.3.1",
+        "@wordpress/components",
         "@wordpress/data",
         "@wordpress/element",
         "@wordpress/i18n",
@@ -3559,63 +3556,11 @@
         "@wordpress/private-apis",
         "clsx",
         "cmdk",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
-    "@wordpress/components@28.13.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_@emotion+react@11.14.0__react@18.3.1": {
-      "integrity": "sha512-JaGcXYtFCvHqa62dtxMAMhu6afvefFOuwfUTNiLYg60CA4UDITt6gf+qhpvKNOzVg4qQRw10o/nryrOMoMAEEg==",
-      "dependencies": [
-        "@ariakit/react",
-        "@babel/runtime",
-        "@emotion/cache",
-        "@emotion/css",
-        "@emotion/react",
-        "@emotion/serialize",
-        "@emotion/styled",
-        "@emotion/utils",
-        "@floating-ui/react-dom",
-        "@types/gradient-parser@0.1.3",
-        "@types/highlight-words-core",
-        "@use-gesture/react",
-        "@wordpress/a11y",
-        "@wordpress/compose",
-        "@wordpress/date",
-        "@wordpress/deprecated",
-        "@wordpress/dom",
-        "@wordpress/element",
-        "@wordpress/escape-html",
-        "@wordpress/hooks",
-        "@wordpress/html-entities",
-        "@wordpress/i18n",
-        "@wordpress/icons",
-        "@wordpress/is-shallow-equal",
-        "@wordpress/keycodes",
-        "@wordpress/primitives",
-        "@wordpress/private-apis",
-        "@wordpress/rich-text",
-        "@wordpress/warning",
-        "change-case",
-        "clsx",
-        "colord",
-        "date-fns@3.6.0",
-        "deepmerge",
-        "fast-deep-equal",
-        "framer-motion",
-        "gradient-parser@0.1.5",
-        "highlight-words-core",
-        "is-plain-object@5.0.0",
-        "memize",
-        "path-to-regexp@6.3.0",
-        "re-resizable",
-        "react",
-        "react-colorful",
-        "react-dom",
-        "remove-accents",
-        "uuid@9.0.1"
-      ]
-    },
-    "@wordpress/components@31.0.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_@emotion+react@11.14.0__react@18.3.1": {
+    "@wordpress/components@31.0.0_react@19.2.3_react-dom@19.2.3__react@19.2.3_@emotion+react@11.14.0__react@19.2.3": {
       "integrity": "sha512-2Oz4r+4KCDTV5fMC2l9bDYfRAsLQLs29fLB4PelckW+X3KhhFM6gz5vx5N7hO3WLY19Fn6qKZgtgJjOKWG7+1w==",
       "dependencies": [
         "@ariakit/react",
@@ -3627,7 +3572,7 @@
         "@emotion/styled",
         "@emotion/utils",
         "@floating-ui/react-dom",
-        "@types/gradient-parser@1.1.0",
+        "@types/gradient-parser",
         "@types/highlight-words-core",
         "@use-gesture/react",
         "@wordpress/a11y",
@@ -3655,21 +3600,21 @@
         "deepmerge",
         "fast-deep-equal",
         "framer-motion",
-        "gradient-parser@1.1.1",
+        "gradient-parser",
         "highlight-words-core",
         "is-plain-object@5.0.0",
         "memize",
         "path-to-regexp@6.3.0",
         "re-resizable",
-        "react",
+        "react@19.2.3",
         "react-colorful",
         "react-day-picker",
-        "react-dom",
+        "react-dom@19.2.3_react@19.2.3",
         "remove-accents",
         "uuid@9.0.1"
       ]
     },
-    "@wordpress/compose@7.37.0_react@18.3.1": {
+    "@wordpress/compose@7.37.0_react@19.2.3": {
       "integrity": "sha512-MF3HETEL/gd7AGZ8dmswZujx/vCUD2JtJEHDb0bW+h5JE4xi/RJOP+Nh5K4LxFS7wKBPga8yGU8m+8QXH44R+g==",
       "dependencies": [
         "@types/mousetrap",
@@ -3683,11 +3628,11 @@
         "change-case",
         "clipboard",
         "mousetrap",
-        "react",
+        "react@19.2.3",
         "use-memo-one"
       ]
     },
-    "@wordpress/data@10.37.0_react@18.3.1_redux@5.0.1": {
+    "@wordpress/data@10.37.0_react@19.2.3_redux@5.0.1": {
       "integrity": "sha512-6bKkEoD5WR/lCmJogx9WxgldhMQPvgV1TlCIXhx6xp9uVzqjjgdRmSwZ8IJR13QQ9GGHn7vWb59GtW4lF2FMNA==",
       "dependencies": [
         "@wordpress/compose",
@@ -3701,18 +3646,18 @@
         "equivalent-key-map",
         "is-plain-object@5.0.0",
         "is-promise",
-        "react",
+        "react@19.2.3",
         "redux",
         "rememo",
         "use-memo-one"
       ]
     },
-    "@wordpress/dataviews@11.1.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@wordpress/dataviews@11.1.0_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-gu5UzMH4jSOH9wXT/3C7tRoo8eTLsqgoAq38ND3ERFqwO9hEPmkPRK+4JFW6mkckTHjSOc173cJXrV2wIXd2+Q==",
       "dependencies": [
         "@ariakit/react",
         "@wordpress/base-styles",
-        "@wordpress/components@31.0.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_@emotion+react@11.14.0__react@18.3.1",
+        "@wordpress/components",
         "@wordpress/compose",
         "@wordpress/data",
         "@wordpress/date",
@@ -3731,8 +3676,8 @@
         "date-fns@4.1.0",
         "deepmerge",
         "fast-deep-equal",
-        "react",
-        "react-dom",
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3",
         "remove-accents"
       ]
     },
@@ -3785,8 +3730,8 @@
         "@wordpress/escape-html",
         "change-case",
         "is-plain-object@5.0.0",
-        "react",
-        "react-dom"
+        "react@18.3.1",
+        "react-dom@18.3.1_react@18.3.1"
       ]
     },
     "@wordpress/env@10.37.0": {
@@ -3810,6 +3755,31 @@
     "@wordpress/escape-html@3.37.0": {
       "integrity": "sha512-hJ2yytDPaZ7Gx+Zj+1iUBzZYED+323MTFbkpydJecWA48K+cNyutEEuHPi9bzmJXirI0YSnkN5i1tZoYQPTiGQ=="
     },
+    "@wordpress/eslint-plugin@23.0.0_@babel+core@7.25.7_eslint@8.57.1_@typescript-eslint+parser@6.21.0__eslint@8.57.1_eslint-plugin-import@2.32.0__eslint@8.57.1_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_eslint-plugin-jest@27.9.0__@typescript-eslint+eslint-plugin@6.21.0___@typescript-eslint+parser@6.21.0____eslint@8.57.1___eslint@8.57.1__eslint@8.57.1__@typescript-eslint+parser@6.21.0___eslint@8.57.1__jest@29.7.0_eslint-config-prettier@8.10.2__eslint@8.57.1": {
+      "integrity": "sha512-fdgBWc7jC0JKi8j16lt51F3Sp02n7emSU3af5UFnQ5feXyJSO3mGcVJzZDpehL3ts/Clhu3II+CYOlUeek4H8g==",
+      "dependencies": [
+        "@babel/core",
+        "@babel/eslint-parser",
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/parser",
+        "@wordpress/babel-preset-default",
+        "@wordpress/prettier-config",
+        "cosmiconfig@7.1.0",
+        "eslint",
+        "eslint-config-prettier",
+        "eslint-import-resolver-typescript",
+        "eslint-plugin-import",
+        "eslint-plugin-jest@27.9.0_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_eslint@8.57.1_@typescript-eslint+parser@6.21.0__eslint@8.57.1_jest@29.7.0",
+        "eslint-plugin-jsdoc",
+        "eslint-plugin-jsx-a11y",
+        "eslint-plugin-playwright@0.15.3_eslint@8.57.1_eslint-plugin-jest@27.9.0__@typescript-eslint+eslint-plugin@6.21.0___@typescript-eslint+parser@6.21.0____eslint@8.57.1___eslint@8.57.1__eslint@8.57.1__@typescript-eslint+parser@6.21.0___eslint@8.57.1__jest@29.7.0_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_@typescript-eslint+parser@6.21.0__eslint@8.57.1",
+        "eslint-plugin-prettier",
+        "eslint-plugin-react",
+        "eslint-plugin-react-hooks",
+        "globals",
+        "requireindex"
+      ]
+    },
     "@wordpress/eslint-plugin@23.0.0_@babel+core@7.25.7_eslint@8.57.1_@typescript-eslint+parser@6.21.0__eslint@8.57.1_eslint-plugin-import@2.32.0__eslint@8.57.1_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_jest@29.7.0_eslint-plugin-jest@27.9.0__@typescript-eslint+eslint-plugin@6.21.0___@typescript-eslint+parser@6.21.0____eslint@8.57.1___eslint@8.57.1__eslint@8.57.1__jest@29.7.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1_eslint-config-prettier@8.10.2__eslint@8.57.1": {
       "integrity": "sha512-fdgBWc7jC0JKi8j16lt51F3Sp02n7emSU3af5UFnQ5feXyJSO3mGcVJzZDpehL3ts/Clhu3II+CYOlUeek4H8g==",
       "dependencies": [
@@ -3824,10 +3794,10 @@
         "eslint-config-prettier",
         "eslint-import-resolver-typescript",
         "eslint-plugin-import",
-        "eslint-plugin-jest",
+        "eslint-plugin-jest@27.9.0_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_eslint@8.57.1_jest@29.7.0_@typescript-eslint+parser@6.21.0__eslint@8.57.1",
         "eslint-plugin-jsdoc",
         "eslint-plugin-jsx-a11y",
-        "eslint-plugin-playwright",
+        "eslint-plugin-playwright@0.15.3_eslint@8.57.1_eslint-plugin-jest@27.9.0__@typescript-eslint+eslint-plugin@6.21.0___@typescript-eslint+parser@6.21.0____eslint@8.57.1___eslint@8.57.1__eslint@8.57.1__jest@29.7.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_jest@29.7.0_@typescript-eslint+parser@6.21.0__eslint@8.57.1",
         "eslint-plugin-prettier",
         "eslint-plugin-react",
         "eslint-plugin-react-hooks",
@@ -3835,7 +3805,7 @@
         "requireindex"
       ]
     },
-    "@wordpress/global-styles-engine@1.4.0_react@18.3.1": {
+    "@wordpress/global-styles-engine@1.4.0_react@19.2.3": {
       "integrity": "sha512-gGwyqI3ntyeHQTRs8HRT2I+TrBWDU95mTp6y5n3FdTaya+Sl5fHVDdWs/MBcaZBipyLbp/TQVKKP1zM3FZHyLw==",
       "dependencies": [
         "@wordpress/blocks",
@@ -3866,15 +3836,15 @@
       ],
       "bin": true
     },
-    "@wordpress/icons@11.4.0_react@18.3.1": {
+    "@wordpress/icons@11.4.0_react@19.2.3": {
       "integrity": "sha512-3sis5bwTyDOrLy83Mp799NNJuEgbTOWwHpxnGNmabEDA3BbBYPnr0soSGSFe201nqNKiVwL/TcpRaQ91SoEHTQ==",
       "dependencies": [
         "@wordpress/element",
         "@wordpress/primitives",
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@wordpress/image-cropper@1.1.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@wordpress/image-cropper@1.1.0_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-UT5f/8AdWxRo0wiEOpAeOk8UNdHJEXfNYy9MZ1kit7mG0o8WW7T8+0Rroktbz5wej4T38KYI3zDOMXGlBhr43g==",
       "dependencies": [
         "@wordpress/element",
@@ -3909,13 +3879,13 @@
         "jest"
       ]
     },
-    "@wordpress/keyboard-shortcuts@5.37.0_react@18.3.1": {
+    "@wordpress/keyboard-shortcuts@5.37.0_react@19.2.3": {
       "integrity": "sha512-9IJFAYBbUQy2GLJGf0T1yBsOMfh5GuKkt+wvnWYqO1nTn1MqDu/YAibPQgv4a5Ftzc2jH6RuLlelaIepOEE4Qw==",
       "dependencies": [
         "@wordpress/data",
         "@wordpress/element",
         "@wordpress/keycodes",
-        "react"
+        "react@19.2.3"
       ]
     },
     "@wordpress/keycodes@4.37.0": {
@@ -3924,12 +3894,12 @@
         "@wordpress/i18n"
       ]
     },
-    "@wordpress/notices@5.37.0_react@18.3.1": {
+    "@wordpress/notices@5.37.0_react@19.2.3": {
       "integrity": "sha512-b/bJSCXJR8wsdJQMcUxKIhodp6CwephHdUEEMGaZMbsU252m6gZ2FF2kH49XeQSNr4fTLQjRHWaZUpijApAzBA==",
       "dependencies": [
         "@wordpress/a11y",
         "@wordpress/data",
-        "react"
+        "react@19.2.3"
       ]
     },
     "@wordpress/npm-package-json-lint-config@5.37.0_npm-package-json-lint@6.4.0__ajv@6.12.6": {
@@ -3947,12 +3917,12 @@
         "postcss-import"
       ]
     },
-    "@wordpress/preferences@4.37.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@wordpress/preferences@4.37.0_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-+GOmfe+i47SA74zDi+j6jYxoI0sZv2056tDbf+uGBF8rOEceQaLEhs+24fY/shAJV3Umf09yltXph5kdfs05/w==",
       "dependencies": [
         "@wordpress/a11y",
         "@wordpress/base-styles",
-        "@wordpress/components@31.0.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_@emotion+react@11.14.0__react@18.3.1",
+        "@wordpress/components",
         "@wordpress/compose",
         "@wordpress/data",
         "@wordpress/deprecated",
@@ -3961,8 +3931,8 @@
         "@wordpress/icons",
         "@wordpress/private-apis",
         "clsx",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
     "@wordpress/prettier-config@4.37.0_prettier@3.7.4": {
@@ -3971,12 +3941,12 @@
         "prettier"
       ]
     },
-    "@wordpress/primitives@4.37.0_react@18.3.1": {
+    "@wordpress/primitives@4.37.0_react@19.2.3": {
       "integrity": "sha512-iPpiS1tu1U5cXxVW6CQ45rqdnIc4Ev5FGyicuuaru0wboC+d2CwoNHxPFDOOpGL16yp8OfSDA13vQY3MJHw7QA==",
       "dependencies": [
         "@wordpress/element",
         "clsx",
-        "react"
+        "react@19.2.3"
       ]
     },
     "@wordpress/priority-queue@3.37.0": {
@@ -3997,7 +3967,7 @@
         "rungen"
       ]
     },
-    "@wordpress/rich-text@7.37.0_react@18.3.1": {
+    "@wordpress/rich-text@7.37.0_react@19.2.3": {
       "integrity": "sha512-uvLLVg77F4meoMMYjtdYcvo4eQxj3mKH8f9dKnkCrOyKOKNCdV5wHDUYWrySkgrAyoBJjTm8hZKK/U3adlPgEg==",
       "dependencies": [
         "@wordpress/a11y",
@@ -4010,10 +3980,10 @@
         "@wordpress/keycodes",
         "colord",
         "memize",
-        "react"
+        "react@19.2.3"
       ]
     },
-    "@wordpress/scripts@31.2.0_@playwright+test@1.57.0_@wordpress+env@10.37.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_react-refresh@0.14.2_webpack@5.104.1__acorn@8.15.0_webpack-dev-server@4.15.2__webpack@5.104.1___acorn@8.15.0__@types+express@4.17.25_@babel+core@7.25.7_eslint@8.57.1_jest@29.7.0_npm-package-json-lint@6.4.0__ajv@6.12.6_postcss@8.5.6_stylelint@16.26.1__@csstools+css-tokenizer@3.0.4__@csstools+css-parser-algorithms@3.0.5___@csstools+css-tokenizer@3.0.4__postcss-selector-parser@7.1.1__postcss@8.5.6_sass@1.97.1": {
+    "@wordpress/scripts@31.2.0_@playwright+test@1.57.0_@wordpress+env@10.37.0_react@19.2.3_react-dom@19.2.3__react@19.2.3_react-refresh@0.14.2_webpack@5.104.1__acorn@8.15.0_webpack-dev-server@4.15.2__webpack@5.104.1___acorn@8.15.0__@types+express@4.17.25_@babel+core@7.25.7_eslint@8.57.1_jest@29.7.0_npm-package-json-lint@6.4.0__ajv@6.12.6_postcss@8.5.6_stylelint@16.26.1__@csstools+css-tokenizer@3.0.4__@csstools+css-parser-algorithms@3.0.5___@csstools+css-tokenizer@3.0.4__postcss-selector-parser@7.1.1__postcss@8.5.6_sass@1.97.1": {
       "integrity": "sha512-0BKF/aWGX2MegnsgxNkoKQCIlZzvzc/w9noC0hCsNCQqgTolP+idtr8sBA3J2E5gP3ieGk4DCr9CbAtLjkP23g==",
       "dependencies": [
         "@babel/core",
@@ -4025,7 +3995,7 @@
         "@wordpress/dependency-extraction-webpack-plugin",
         "@wordpress/e2e-test-utils-playwright",
         "@wordpress/env",
-        "@wordpress/eslint-plugin",
+        "@wordpress/eslint-plugin@23.0.0_@babel+core@7.25.7_eslint@8.57.1_@typescript-eslint+parser@6.21.0__eslint@8.57.1_eslint-plugin-import@2.32.0__eslint@8.57.1_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_jest@29.7.0_eslint-plugin-jest@27.9.0__@typescript-eslint+eslint-plugin@6.21.0___@typescript-eslint+parser@6.21.0____eslint@8.57.1___eslint@8.57.1__eslint@8.57.1__jest@29.7.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1_eslint-config-prettier@8.10.2__eslint@8.57.1",
         "@wordpress/jest-preset-default",
         "@wordpress/npm-package-json-lint-config",
         "@wordpress/postcss-plugins-preset",
@@ -4062,8 +4032,8 @@
         "postcss-loader",
         "prettier@npm:wp-prettier@3.0.3",
         "puppeteer-core@23.11.1_devtools-protocol@0.0.1367902",
-        "react",
-        "react-dom",
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3",
         "react-refresh",
         "read-pkg-up",
         "resolve-bin",
@@ -4116,7 +4086,7 @@
         "@wordpress/is-shallow-equal"
       ]
     },
-    "@wordpress/upload-media@0.22.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "@wordpress/upload-media@0.22.0_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-IQ5/FLmCZm0n/DotF4ZfiYX6pQG8zqVVTfLP/MCIdIKuFHqFs0Z1CAE20qnPDC7kRH+GaGmIIKIYOS0d0rIIdA==",
       "dependencies": [
         "@wordpress/api-fetch",
@@ -4128,8 +4098,8 @@
         "@wordpress/preferences",
         "@wordpress/private-apis",
         "@wordpress/url",
-        "react",
-        "react-dom",
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3",
         "uuid@9.0.1"
       ]
     },
@@ -4996,15 +4966,15 @@
     "clsx@2.1.1": {
       "integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA=="
     },
-    "cmdk@1.1.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "cmdk@1.1.1_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-Vsv7kFaXm+ptHDMZ7izaRsP70GgrW9NBNGswt9OZaVBLlE0SNpDq8eu/VGXyF9r7M0azK3Wy7OlYXsuyYLFzHg==",
       "dependencies": [
         "@radix-ui/react-compose-refs",
         "@radix-ui/react-dialog",
         "@radix-ui/react-id",
         "@radix-ui/react-primitive",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
     "co@4.6.0": {
@@ -5927,6 +5897,19 @@
         "tsconfig-paths"
       ]
     },
+    "eslint-plugin-jest@27.9.0_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_eslint@8.57.1_@typescript-eslint+parser@6.21.0__eslint@8.57.1_jest@29.7.0": {
+      "integrity": "sha512-QIT7FH7fNmd9n4se7FFKHbsLKGQiw885Ds6Y/sxKgCZ6natwCsXdgPOADnYVxN2QrRweF0FZWbJ6S7Rsn7llug==",
+      "dependencies": [
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/utils@5.62.0_eslint@8.57.1",
+        "eslint",
+        "jest"
+      ],
+      "optionalPeers": [
+        "@typescript-eslint/eslint-plugin",
+        "jest"
+      ]
+    },
     "eslint-plugin-jest@27.9.0_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_eslint@8.57.1_jest@29.7.0_@typescript-eslint+parser@6.21.0__eslint@8.57.1": {
       "integrity": "sha512-QIT7FH7fNmd9n4se7FFKHbsLKGQiw885Ds6Y/sxKgCZ6natwCsXdgPOADnYVxN2QrRweF0FZWbJ6S7Rsn7llug==",
       "dependencies": [
@@ -5976,14 +5959,24 @@
         "string.prototype.includes"
       ]
     },
+    "eslint-plugin-playwright@0.15.3_eslint@8.57.1_eslint-plugin-jest@27.9.0__@typescript-eslint+eslint-plugin@6.21.0___@typescript-eslint+parser@6.21.0____eslint@8.57.1___eslint@8.57.1__eslint@8.57.1__@typescript-eslint+parser@6.21.0___eslint@8.57.1__jest@29.7.0_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_@typescript-eslint+parser@6.21.0__eslint@8.57.1": {
+      "integrity": "sha512-LQMW5y0DLK5Fnpya7JR1oAYL2/7Y9wDiYw6VZqlKqcRGSgjbVKNqxraphk7ra1U3Bb5EK444xMgUlQPbMg2M1g==",
+      "dependencies": [
+        "eslint",
+        "eslint-plugin-jest@27.9.0_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_eslint@8.57.1_@typescript-eslint+parser@6.21.0__eslint@8.57.1_jest@29.7.0"
+      ],
+      "optionalPeers": [
+        "eslint-plugin-jest@27.9.0_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_eslint@8.57.1_@typescript-eslint+parser@6.21.0__eslint@8.57.1_jest@29.7.0"
+      ]
+    },
     "eslint-plugin-playwright@0.15.3_eslint@8.57.1_eslint-plugin-jest@27.9.0__@typescript-eslint+eslint-plugin@6.21.0___@typescript-eslint+parser@6.21.0____eslint@8.57.1___eslint@8.57.1__eslint@8.57.1__jest@29.7.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_jest@29.7.0_@typescript-eslint+parser@6.21.0__eslint@8.57.1": {
       "integrity": "sha512-LQMW5y0DLK5Fnpya7JR1oAYL2/7Y9wDiYw6VZqlKqcRGSgjbVKNqxraphk7ra1U3Bb5EK444xMgUlQPbMg2M1g==",
       "dependencies": [
         "eslint",
-        "eslint-plugin-jest"
+        "eslint-plugin-jest@27.9.0_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_eslint@8.57.1_jest@29.7.0_@typescript-eslint+parser@6.21.0__eslint@8.57.1"
       ],
       "optionalPeers": [
-        "eslint-plugin-jest"
+        "eslint-plugin-jest@27.9.0_@typescript-eslint+eslint-plugin@6.21.0__@typescript-eslint+parser@6.21.0___eslint@8.57.1__eslint@8.57.1_eslint@8.57.1_jest@29.7.0_@typescript-eslint+parser@6.21.0__eslint@8.57.1"
       ]
     },
     "eslint-plugin-prettier@5.5.4_eslint@8.57.1_eslint-config-prettier@8.10.2__eslint@8.57.1_prettier@3.7.4": {
@@ -6473,18 +6466,18 @@
     "fraction.js@5.3.4": {
       "integrity": "sha512-1X1NTtiJphryn/uLQz3whtY6jK3fTqoE3ohKs0tT+Ujr1W59oopxmoEh7Lu5p6vBaPbgoM0bzveAW4Qi5RyWDQ=="
     },
-    "framer-motion@11.18.2_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "framer-motion@11.18.2_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-5F5Och7wrvtLVElIpclDT0CBzMVg3dL22B64aZwHtsIY8RB4mXICLrkajK4G9R+ieSAGcgrLeae2SeUTg2pr6w==",
       "dependencies": [
         "motion-dom",
         "motion-utils",
-        "react",
-        "react-dom",
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3",
         "tslib@2.8.1"
       ],
       "optionalPeers": [
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
     "fresh@0.5.2": {
@@ -6736,9 +6729,6 @@
     },
     "graceful-fs@4.2.11": {
       "integrity": "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ=="
-    },
-    "gradient-parser@0.1.5": {
-      "integrity": "sha512-+uPlcVbjrKOnTzvz0MjTj7BfACj8OmxIa1moIjJV7btvhUMSJk0D47RfDCgDrZE3dYMz9Cf5xKJwnrKLjUq0KQ=="
     },
     "gradient-parser@1.1.1": {
       "integrity": "sha512-Hu0YfNU+38EsTmnUfLXUKFMXq9yz7htGYpF4x+dlbBhUCvIvzLt0yVLT/gJRmvLKFJdqNFrz4eKkIUjIXSr7Tw=="
@@ -9391,53 +9381,60 @@
         "unpipe"
       ]
     },
-    "re-resizable@6.11.2_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "re-resizable@6.11.2_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-2xI2P3OHs5qw7K0Ud1aLILK6MQxW50TcO+DetD9eIV58j84TqYeHoZcL9H4GXFXXIh7afhH8mv5iUCXII7OW7A==",
       "dependencies": [
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
-    "react-autosize-textarea@7.1.0_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "react-autosize-textarea@7.1.0_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-BHpjCDkuOlllZn3nLazY2F8oYO1tS2jHnWhcjTWQdcKiiMU6gHLNt/fzmqMSyerR0eTdKtfSIqtSeTtghNwS+g==",
       "dependencies": [
         "autosize",
         "line-height",
         "prop-types",
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
-    "react-colorful@5.6.1_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "react-colorful@5.6.1_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-1exovf0uGTGyq5mXQT0zgQ80uvj2PCwvF8zY1RN9/vbJVSjSo3fsB/4L3ObbF7u70NduSiK4xu4Y6q1MHoUGEw==",
       "dependencies": [
-        "react",
-        "react-dom"
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3"
       ]
     },
-    "react-day-picker@9.13.0_react@18.3.1": {
+    "react-day-picker@9.13.0_react@19.2.3": {
       "integrity": "sha512-euzj5Hlq+lOHqI53NiuNhCP8HWgsPf/bBAVijR50hNaY1XwjKjShAnIe8jm8RD2W9IJUvihDIZ+KrmqfFzNhFQ==",
       "dependencies": [
         "@date-fns/tz",
         "date-fns@4.1.0",
         "date-fns-jalali",
-        "react"
+        "react@19.2.3"
       ]
     },
     "react-dom@18.3.1_react@18.3.1": {
       "integrity": "sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==",
       "dependencies": [
         "loose-envify",
-        "react",
-        "scheduler"
+        "react@18.3.1",
+        "scheduler@0.23.2"
       ]
     },
-    "react-easy-crop@5.5.6_react@18.3.1_react-dom@18.3.1__react@18.3.1": {
+    "react-dom@19.2.3_react@19.2.3": {
+      "integrity": "sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==",
+      "dependencies": [
+        "react@19.2.3",
+        "scheduler@0.27.0"
+      ]
+    },
+    "react-easy-crop@5.5.6_react@19.2.3_react-dom@19.2.3__react@19.2.3": {
       "integrity": "sha512-Jw3/ozs8uXj3NpL511Suc4AHY+mLRO23rUgipXvNYKqezcFSYHxe4QXibBymkOoY6oOtLVMPO2HNPRHYvMPyTw==",
       "dependencies": [
         "normalize-wheel",
-        "react",
-        "react-dom",
+        "react@19.2.3",
+        "react-dom@19.2.3_react@19.2.3",
         "tslib@2.8.1"
       ]
     },
@@ -9450,18 +9447,18 @@
     "react-refresh@0.14.2": {
       "integrity": "sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA=="
     },
-    "react-remove-scroll-bar@2.3.8_react@18.3.1": {
+    "react-remove-scroll-bar@2.3.8_react@19.2.3": {
       "integrity": "sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q==",
       "dependencies": [
-        "react",
+        "react@19.2.3",
         "react-style-singleton",
         "tslib@2.8.1"
       ]
     },
-    "react-remove-scroll@2.7.2_react@18.3.1": {
+    "react-remove-scroll@2.7.2_react@19.2.3": {
       "integrity": "sha512-Iqb9NjCCTt6Hf+vOdNIZGdTiH1QSqr27H/Ek9sv/a97gfueI/5h1s3yRi1nngzMUaOOToin5dI1dXKdXiF+u0Q==",
       "dependencies": [
-        "react",
+        "react@19.2.3",
         "react-remove-scroll-bar",
         "react-style-singleton",
         "tslib@2.8.1",
@@ -9469,11 +9466,11 @@
         "use-sidecar"
       ]
     },
-    "react-style-singleton@2.2.3_react@18.3.1": {
+    "react-style-singleton@2.2.3_react@19.2.3": {
       "integrity": "sha512-b6jSvxvVnyptAiLjbkWLE/lOnR4lfTtDAl+eUC7RZy+QQWc6wRzIV2CE6xBuMmDxc2qIihtDCZD5NPOFl7fRBQ==",
       "dependencies": [
         "get-nonce",
-        "react",
+        "react@19.2.3",
         "tslib@2.8.1"
       ]
     },
@@ -9482,6 +9479,9 @@
       "dependencies": [
         "loose-envify"
       ]
+    },
+    "react@19.2.3": {
+      "integrity": "sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA=="
     },
     "read-cache@1.0.0": {
       "integrity": "sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==",
@@ -9572,9 +9572,6 @@
     },
     "regenerate@1.4.2": {
       "integrity": "sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A=="
-    },
-    "regenerator-runtime@0.14.1": {
-      "integrity": "sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw=="
     },
     "regexp.prototype.flags@1.5.4": {
       "integrity": "sha512-dYqgNSZbDwkaJ2ceRd9ojCGjBq+mOm9LmtXnAnEGyHhN/5R7iDW2TRw3h+o/jCFxus3P2LfWIIiwowAjANm7IA==",
@@ -9836,6 +9833,9 @@
       "dependencies": [
         "loose-envify"
       ]
+    },
+    "scheduler@0.27.0": {
+      "integrity": "sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q=="
     },
     "schema-utils@3.3.0_ajv@6.12.6": {
       "integrity": "sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==",
@@ -10941,31 +10941,31 @@
         "webpack"
       ]
     },
-    "use-callback-ref@1.3.3_react@18.3.1": {
+    "use-callback-ref@1.3.3_react@19.2.3": {
       "integrity": "sha512-jQL3lRnocaFtu3V00JToYz/4QkNWswxijDaCVNZRiRTO3HQDLsdu1ZtmIUvV4yPp+rvWm5j0y0TG/S61cuijTg==",
       "dependencies": [
-        "react",
+        "react@19.2.3",
         "tslib@2.8.1"
       ]
     },
-    "use-memo-one@1.1.3_react@18.3.1": {
+    "use-memo-one@1.1.3_react@19.2.3": {
       "integrity": "sha512-g66/K7ZQGYrI6dy8GLpVcMsBp4s17xNkYJVSMvTEevGy3nDxHOfE6z8BVE22+5G5x7t3+bhzrlTDB7ObrEE0cQ==",
       "dependencies": [
-        "react"
+        "react@19.2.3"
       ]
     },
-    "use-sidecar@1.1.3_react@18.3.1": {
+    "use-sidecar@1.1.3_react@19.2.3": {
       "integrity": "sha512-Fedw0aZvkhynoPYlA5WXrMCAMm+nSWdZt6lzJQ7Ok8S6Q+VsHmHpRWndVRJ8Be0ZbkfPc5LRYH+5XrzXcEeLRQ==",
       "dependencies": [
         "detect-node-es",
-        "react",
+        "react@19.2.3",
         "tslib@2.8.1"
       ]
     },
-    "use-sync-external-store@1.6.0_react@18.3.1": {
+    "use-sync-external-store@1.6.0_react@19.2.3": {
       "integrity": "sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==",
       "dependencies": [
-        "react"
+        "react@19.2.3"
       ]
     },
     "util-deprecate@1.0.2": {
@@ -11451,11 +11451,14 @@
         "npm:@wordpress/block-editor@^15.10.0",
         "npm:@wordpress/blocks@^15.10.0",
         "npm:@wordpress/browserslist-config@^6.37.0",
-        "npm:@wordpress/components@^28.13.0",
+        "npm:@wordpress/components@31",
         "npm:@wordpress/element@^6.37.0",
         "npm:@wordpress/env@^10.37.0",
+        "npm:@wordpress/eslint-plugin@23",
         "npm:@wordpress/i18n@^6.10.0",
-        "npm:@wordpress/scripts@^31.2.0"
+        "npm:@wordpress/scripts@^31.2.0",
+        "npm:react-dom@^19.2.3",
+        "npm:react@^19.2.3"
       ]
     }
   }
