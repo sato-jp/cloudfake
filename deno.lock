@@ -6,6 +6,7 @@
     "jsr:@std/path@1": "1.1.2",
     "npm:@wordpress/block-editor@^15.10.0": "15.10.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_postcss@8.5.6",
     "npm:@wordpress/blocks@^15.10.0": "15.10.0_react@18.3.1",
+    "npm:@wordpress/browserslist-config@^6.37.0": "6.37.0",
     "npm:@wordpress/components@^28.13.0": "28.13.0_react@18.3.1_react-dom@18.3.1__react@18.3.1_@emotion+react@11.14.0__react@18.3.1",
     "npm:@wordpress/element@^6.37.0": "6.37.0_@types+react@18.3.27_react@18.3.1",
     "npm:@wordpress/env@^10.37.0": "10.37.0",
@@ -355,13 +356,6 @@
     },
     "@babel/plugin-syntax-import-attributes@7.26.0_@babel+core@7.25.7": {
       "integrity": "sha512-e2dttdsJ1ZTpi3B9UYGLw41hifAubg19AtCu/2I/F1QNVclOBr1dYpTdmdyZ84Xiz43BS/tCUkMAZNLv12Pi+A==",
-      "dependencies": [
-        "@babel/core",
-        "@babel/helper-plugin-utils"
-      ]
-    },
-    "@babel/plugin-syntax-import-attributes@7.27.1_@babel+core@7.25.7": {
-      "integrity": "sha512-oFT0FrKHgF53f4vOsZGi2Hh3I35PfSmVs4IBFLFj4dnafP+hIWDLg3VyKmUHfLoLHlyxY4C7DGtmHuJgn+IGww==",
       "dependencies": [
         "@babel/core",
         "@babel/helper-plugin-utils"
@@ -934,7 +928,7 @@
         "@babel/plugin-syntax-dynamic-import",
         "@babel/plugin-syntax-export-namespace-from",
         "@babel/plugin-syntax-import-assertions",
-        "@babel/plugin-syntax-import-attributes@7.27.1_@babel+core@7.25.7",
+        "@babel/plugin-syntax-import-attributes",
         "@babel/plugin-syntax-import-meta",
         "@babel/plugin-syntax-json-strings",
         "@babel/plugin-syntax-logical-assignment-operators",
@@ -3437,7 +3431,7 @@
       "integrity": "sha512-tPLa2YFAau+gT2zKovRK5DRiJchsKgNFiuElIWeKYkLytkyws9fQAgjF/AkDFFxRMdDocNfCscpKWhp79+tIFA==",
       "dependencies": [
         "@babel/core",
-        "@babel/plugin-syntax-import-attributes@7.26.0_@babel+core@7.25.7",
+        "@babel/plugin-syntax-import-attributes",
         "@babel/plugin-transform-react-jsx@7.25.7_@babel+core@7.25.7",
         "@babel/plugin-transform-runtime",
         "@babel/preset-env",
@@ -4562,7 +4556,7 @@
         "@babel/plugin-syntax-bigint",
         "@babel/plugin-syntax-class-properties",
         "@babel/plugin-syntax-class-static-block",
-        "@babel/plugin-syntax-import-attributes@7.27.1_@babel+core@7.25.7",
+        "@babel/plugin-syntax-import-attributes",
         "@babel/plugin-syntax-import-meta",
         "@babel/plugin-syntax-json-strings",
         "@babel/plugin-syntax-logical-assignment-operators",
@@ -11456,6 +11450,7 @@
       "dependencies": [
         "npm:@wordpress/block-editor@^15.10.0",
         "npm:@wordpress/blocks@^15.10.0",
+        "npm:@wordpress/browserslist-config@^6.37.0",
         "npm:@wordpress/components@^28.13.0",
         "npm:@wordpress/element@^6.37.0",
         "npm:@wordpress/env@^10.37.0",
