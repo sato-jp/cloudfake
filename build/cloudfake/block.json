@@ -1,0 +1,95 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "cloudfake/cloudfake",
+  "version": "1.0.0",
+  "title": "Cloudfake",
+  "description": "Adds a block that mimics the Cloudflare downtime error screen.",
+  "category": "theme",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Internal server error"
+    },
+    "errorCode": {
+      "type": "string",
+      "default": "500"
+    },
+    "whatHappened": {
+      "type": "string",
+      "default": "There is an internal server error on Cloudflare's network."
+    },
+    "whatCanIDo": {
+      "type": "string",
+      "default": "Please try again in a few minutes."
+    },
+    "browserStatus": {
+      "type": "string",
+      "default": "Working"
+    },
+    "browserLocation": {
+      "type": "string",
+      "default": "You"
+    },
+    "browserName": {
+      "type": "string",
+      "default": "Browser"
+    },
+    "browserStatusText": {
+      "type": "string",
+      "default": "Working"
+    },
+    "cloudflareStatus": {
+      "type": "string",
+      "default": "Error"
+    },
+    "cloudflareLocation": {
+      "type": "string",
+      "default": "San Francisco"
+    },
+    "cloudflareName": {
+      "type": "string",
+      "default": "Cloudflare"
+    },
+    "cloudflareStatusText": {
+      "type": "string",
+      "default": "Error"
+    },
+    "hostStatus": {
+      "type": "string",
+      "default": "Working"
+    },
+    "hostLocation": {
+      "type": "string",
+      "default": "Website"
+    },
+    "hostName": {
+      "type": "string",
+      "default": "Host"
+    },
+    "hostStatusText": {
+      "type": "string",
+      "default": "Working"
+    },
+    "errorSource": {
+      "type": "string",
+      "default": "cloudflare"
+    }
+  },
+  "example": {
+    "attributes": {
+      "title": "Internal server error",
+      "errorCode": "500",
+      "whatHappened": "There is an internal server error on Cloudflare's network.",
+      "whatCanIDo": "Please try again in a few minutes."
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "cloudfake",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

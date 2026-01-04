@@ -1,0 +1,34 @@
+{
+	"tasks": {
+		"start": "dx wp-scripts start --blocks-manifest",
+		"build": "dx wp-scripts build --blocks-manifest",
+		"env": "dx wp-env start",
+		"env:wp:cli:plugin:check": "dx wp-env run cli wp plugin check cloudfake --exclude-directories='node_modules' --exclude-files='.DS_Store,.gitignore,.wp-env.json,.editorconfig'",
+		"format": "dx wp-scripts format",
+		"lint:css": "dx wp-scripts lint-style",
+		"lint:css:fix": "dx wp-scripts lint-style --fix",
+		"lint:js": "dx wp-scripts lint-js",
+		"lint:js:fix": "dx wp-scripts lint-js --fix",
+		"packages-update": "dx wp-scripts packages-update",
+		"plugin-zip": "dx wp-scripts plugin-zip",
+		"readme": "deno run --allow-read --allow-write --allow-env @pixelium/wp-readme"
+	},
+	"nodeModulesDir": "auto",
+	"fmt": {
+		"indentWidth": 4,
+		"useTabs": true,
+		"lineWidth": 400,
+		"include": ["deno.json", "package.json", ".wp-env.json"]
+	},
+	"lint": {
+		"rules": {
+			"tags": ["recommended"]
+		},
+		"globals": {
+			"globalThis": "readonly"
+		}
+	},
+	"imports": {
+		"@pixelium/wp-readme": "jsr:@pixelium/wp-readme@^2.0.5"
+	}
+}
