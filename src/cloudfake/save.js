@@ -60,7 +60,9 @@ export default function save({ attributes }) {
 							</a>{' '}
 							for more information.
 						</div>
-						<div className="mt-3">2025-12-10 15:05:59 UTC</div>
+					<div className="mt-3 cf-timestamp">
+						2024-01-15 10:30:45
+					</div>
 					</header>
 					<div className="my-8 bg-gradient-gray">
 						<div className="w-240 lg:w-full mx-auto">

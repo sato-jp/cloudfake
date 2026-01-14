@@ -305,12 +305,21 @@ export default function Edit({ attributes, setAttributes }) {
 							</a>{' '}
 							for more information.
 						</div>
-						<div className="mt-3">
-							{new Date()
-								.toISOString()
-								.replace('T', ' ')
-								.slice(0, -5)}{' '}
-							UTC
+						<div className="mt-3 cf-timestamp">
+							{(() => {
+								const now = new Date();
+								const formatter = new Intl.DateTimeFormat('en-US', {
+									year: 'numeric',
+									month: '2-digit',
+									day: '2-digit',
+									hour: '2-digit',
+									minute: '2-digit',
+									second: '2-digit',
+									hour12: false
+								});
+								const parts = formatter.formatToParts(now);
+								return `${parts.find(p => p.type === 'year').value}-${parts.find(p => p.type === 'month').value}-${parts.find(p => p.type === 'day').value} ${parts.find(p => p.type === 'hour').value}:${parts.find(p => p.type === 'minute').value}:${parts.find(p => p.type === 'second').value}`;
+							})()}
 						</div>
 					</header>
 					<div className="my-8 bg-gradient-gray">

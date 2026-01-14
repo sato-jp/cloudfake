@@ -51,6 +51,27 @@ function initRayId() {
 	});
 }
 
+// Update timestamp to current time on page load
+function initTimestamp() {
+	const now = new Date();
+	const formatter = new Intl.DateTimeFormat('en-US', {
+		year: 'numeric',
+		month: '2-digit',
+		day: '2-digit',
+		hour: '2-digit',
+		minute: '2-digit',
+		second: '2-digit',
+		hour12: false
+	});
+	const parts = formatter.formatToParts(now);
+	const timestamp = `${parts.find(p => p.type === 'year').value}-${parts.find(p => p.type === 'month').value}-${parts.find(p => p.type === 'day').value} ${parts.find(p => p.type === 'hour').value}:${parts.find(p => p.type === 'minute').value}:${parts.find(p => p.type === 'second').value}`;
+
+	// Find all timestamp elements (handle multiple blocks on same page)
+	document.querySelectorAll('.cf-timestamp').forEach((el) => {
+		el.textContent = timestamp;
+	});
+}
+
 // Front-end behavior: reveal client IP when the "Click to reveal" button is pressed.
 function initIpReveal() {
 	// Don't run in the block editor
@@ -122,9 +143,11 @@ function initIpReveal() {
 if (document.readyState === 'loading') {
 	document.addEventListener('DOMContentLoaded', () => {
 		initRayId();
+		initTimestamp();
 		initIpReveal();
 	});
 } else {
 	initRayId();
+	initTimestamp();
 	initIpReveal();
 }
