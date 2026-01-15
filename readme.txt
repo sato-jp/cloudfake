@@ -19,7 +19,7 @@ This plugin is based on the [cloudflare-error-page](https://github.com/donlon/cl
 
 **Important Notice:** This plugin is not affiliated with, endorsed by, or connected to Cloudflare, Inc. This plugin is an independent project created for educational and entertainment purposes.
 
-== External services ==
+= External services =
 
 This plugin uses the ipify API service to obtain the visitor's IP address. This is needed to display the IP address when the "Click to reveal" button is clicked in the error page block.
 
