@@ -61,10 +61,10 @@ function initTimestamp() {
 		hour: '2-digit',
 		minute: '2-digit',
 		second: '2-digit',
-		hour12: false
+		hour12: false,
 	});
 	const parts = formatter.formatToParts(now);
-	const timestamp = `${parts.find(p => p.type === 'year').value}-${parts.find(p => p.type === 'month').value}-${parts.find(p => p.type === 'day').value} ${parts.find(p => p.type === 'hour').value}:${parts.find(p => p.type === 'minute').value}:${parts.find(p => p.type === 'second').value}`;
+	const timestamp = `${parts.find((p) => p.type === 'year').value}-${parts.find((p) => p.type === 'month').value}-${parts.find((p) => p.type === 'day').value} ${parts.find((p) => p.type === 'hour').value}:${parts.find((p) => p.type === 'minute').value}:${parts.find((p) => p.type === 'second').value}`;
 
 	// Find all timestamp elements (handle multiple blocks on same page)
 	document.querySelectorAll('.cf-timestamp').forEach((el) => {

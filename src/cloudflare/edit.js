@@ -238,7 +238,10 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 				</PanelBody>
-				<PanelBody title={__('Host', 'cdn-error-mockups')} initialOpen={false}>
+				<PanelBody
+					title={__('Host', 'cdn-error-mockups')}
+					initialOpen={false}
+				>
 					<SelectControl
 						label={__('Status', 'cdn-error-mockups')}
 						value={hostStatus}
@@ -308,17 +311,20 @@ export default function Edit({ attributes, setAttributes }) {
 						<div className="mt-3 cf-timestamp">
 							{(() => {
 								const now = new Date();
-								const formatter = new Intl.DateTimeFormat('en-US', {
-									year: 'numeric',
-									month: '2-digit',
-									day: '2-digit',
-									hour: '2-digit',
-									minute: '2-digit',
-									second: '2-digit',
-									hour12: false
-								});
+								const formatter = new Intl.DateTimeFormat(
+									'en-US',
+									{
+										year: 'numeric',
+										month: '2-digit',
+										day: '2-digit',
+										hour: '2-digit',
+										minute: '2-digit',
+										second: '2-digit',
+										hour12: false,
+									}
+								);
 								const parts = formatter.formatToParts(now);
-								return `${parts.find(p => p.type === 'year').value}-${parts.find(p => p.type === 'month').value}-${parts.find(p => p.type === 'day').value} ${parts.find(p => p.type === 'hour').value}:${parts.find(p => p.type === 'minute').value}:${parts.find(p => p.type === 'second').value}`;
+								return `${parts.find((p) => p.type === 'year').value}-${parts.find((p) => p.type === 'month').value}-${parts.find((p) => p.type === 'day').value} ${parts.find((p) => p.type === 'hour').value}:${parts.find((p) => p.type === 'minute').value}:${parts.find((p) => p.type === 'second').value}`;
 							})()}
 						</div>
 					</header>
