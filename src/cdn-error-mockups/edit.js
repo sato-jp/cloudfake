@@ -77,16 +77,16 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<div {...useBlockProps()}>
 			<InspectorControls>
-				<PanelBody title={__('Settings', 'cloudfake')}>
+				<PanelBody title={__('Settings', 'cdn-error-mockups')}>
 					<TextControl
-						label={__('Title', 'cloudfake')}
+						label={__('Title', 'cdn-error-mockups')}
 						value={title}
 						onChange={(value) => setAttributes({ title: value })}
 						__next40pxDefaultSize={true}
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextControl
-						label={__('Error Code', 'cloudfake')}
+						label={__('Error Code', 'cdn-error-mockups')}
 						value={errorCode}
 						onChange={(value) =>
 							setAttributes({ errorCode: value })
@@ -95,7 +95,7 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextareaControl
-						label={__('What happened?', 'cloudfake')}
+						label={__('What happened?', 'cdn-error-mockups')}
 						value={whatHappened}
 						onChange={(value) =>
 							setAttributes({ whatHappened: value })
@@ -104,7 +104,7 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextareaControl
-						label={__('What can I do?', 'cloudfake')}
+						label={__('What can I do?', 'cdn-error-mockups')}
 						value={whatCanIDo}
 						onChange={(value) =>
 							setAttributes({ whatCanIDo: value })
@@ -113,19 +113,19 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<SelectControl
-						label={__('Error Source', 'cloudfake')}
+						label={__('Error Source', 'cdn-error-mockups')}
 						value={errorSource}
 						options={[
 							{
-								label: __('Browser', 'cloudfake'),
+								label: __('Browser', 'cdn-error-mockups'),
 								value: 'browser',
 							},
 							{
-								label: __('Cloudflare', 'cloudfake'),
+								label: __('Cloudflare', 'cdn-error-mockups'),
 								value: 'cloudflare',
 							},
 							{
-								label: __('Host', 'cloudfake'),
+								label: __('Host', 'cdn-error-mockups'),
 								value: 'host',
 							},
 						]}
@@ -137,19 +137,19 @@ export default function Edit({ attributes, setAttributes }) {
 					/>
 				</PanelBody>
 				<PanelBody
-					title={__('Browser', 'cloudfake')}
+					title={__('Browser', 'cdn-error-mockups')}
 					initialOpen={false}
 				>
 					<SelectControl
-						label={__('Status', 'cloudfake')}
+						label={__('Status', 'cdn-error-mockups')}
 						value={browserStatus}
 						options={[
 							{
-								label: __('Working', 'cloudfake'),
+								label: __('Working', 'cdn-error-mockups'),
 								value: 'Working',
 							},
 							{
-								label: __('Error', 'cloudfake'),
+								label: __('Error', 'cdn-error-mockups'),
 								value: 'Error',
 							},
 						]}
@@ -160,7 +160,7 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextControl
-						label={__('Location', 'cloudfake')}
+						label={__('Location', 'cdn-error-mockups')}
 						value={browserLocation}
 						onChange={(value) =>
 							setAttributes({ browserLocation: value })
@@ -169,7 +169,7 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextControl
-						label={__('Name', 'cloudfake')}
+						label={__('Name', 'cdn-error-mockups')}
 						value={browserName}
 						onChange={(value) =>
 							setAttributes({ browserName: value })
@@ -178,7 +178,7 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextControl
-						label={__('Status Text', 'cloudfake')}
+						label={__('Status Text', 'cdn-error-mockups')}
 						value={browserStatusText}
 						onChange={(value) =>
 							setAttributes({ browserStatusText: value })
@@ -188,19 +188,19 @@ export default function Edit({ attributes, setAttributes }) {
 					/>
 				</PanelBody>
 				<PanelBody
-					title={__('Cloudflare', 'cloudfake')}
+					title={__('Cloudflare', 'cdn-error-mockups')}
 					initialOpen={false}
 				>
 					<SelectControl
-						label={__('Status', 'cloudfake')}
+						label={__('Status', 'cdn-error-mockups')}
 						value={cloudflareStatus}
 						options={[
 							{
-								label: __('Working', 'cloudfake'),
+								label: __('Working', 'cdn-error-mockups'),
 								value: 'Working',
 							},
 							{
-								label: __('Error', 'cloudfake'),
+								label: __('Error', 'cdn-error-mockups'),
 								value: 'Error',
 							},
 						]}
@@ -211,7 +211,7 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextControl
-						label={__('Location', 'cloudfake')}
+						label={__('Location', 'cdn-error-mockups')}
 						value={cloudflareLocation}
 						onChange={(value) =>
 							setAttributes({ cloudflareLocation: value })
@@ -220,7 +220,7 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextControl
-						label={__('Name', 'cloudfake')}
+						label={__('Name', 'cdn-error-mockups')}
 						value={cloudflareName}
 						onChange={(value) =>
 							setAttributes({ cloudflareName: value })
@@ -229,7 +229,7 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextControl
-						label={__('Status Text', 'cloudfake')}
+						label={__('Status Text', 'cdn-error-mockups')}
 						value={cloudflareStatusText}
 						onChange={(value) =>
 							setAttributes({ cloudflareStatusText: value })
@@ -238,17 +238,17 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 				</PanelBody>
-				<PanelBody title={__('Host', 'cloudfake')} initialOpen={false}>
+				<PanelBody title={__('Host', 'cdn-error-mockups')} initialOpen={false}>
 					<SelectControl
-						label={__('Status', 'cloudfake')}
+						label={__('Status', 'cdn-error-mockups')}
 						value={hostStatus}
 						options={[
 							{
-								label: __('Working', 'cloudfake'),
+								label: __('Working', 'cdn-error-mockups'),
 								value: 'Working',
 							},
 							{
-								label: __('Error', 'cloudfake'),
+								label: __('Error', 'cdn-error-mockups'),
 								value: 'Error',
 							},
 						]}
@@ -259,7 +259,7 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextControl
-						label={__('Location', 'cloudfake')}
+						label={__('Location', 'cdn-error-mockups')}
 						value={hostLocation}
 						onChange={(value) =>
 							setAttributes({ hostLocation: value })
@@ -268,14 +268,14 @@ export default function Edit({ attributes, setAttributes }) {
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextControl
-						label={__('Name', 'cloudfake')}
+						label={__('Name', 'cdn-error-mockups')}
 						value={hostName}
 						onChange={(value) => setAttributes({ hostName: value })}
 						__next40pxDefaultSize={true}
 						__nextHasNoMarginBottom={true}
 					/>
 					<TextControl
-						label={__('Status Text', 'cloudfake')}
+						label={__('Status Text', 'cdn-error-mockups')}
 						value={hostStatusText}
 						onChange={(value) =>
 							setAttributes({ hostStatusText: value })

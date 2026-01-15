@@ -1,17 +1,17 @@
 <?php
 /**
- * Plugin Name:       Cloudfake
- * Plugin URI:        https://github.com/sato-jp/cloudfake
+ * Plugin Name:       CDN Error Mockups
+ * Plugin URI:        https://github.com/sato-jp/cdn-error-mockups
  * Description:       Adds a block that mimics the Cloudflare downtime error screen.
  * Requires at least: 6.9
  * Requires PHP:      8.0
  * Version:           1.0.0
  * Author:            Hiroshi Sato
- * Text Domain:       cloudfake
+ * Text Domain:       cdn-error-mockups
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @package Cloudfake
+ * @package CDN Error Mockups
  * @copyright Copyright (C) 2026 Hiroshi Sato
  */
 
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see https://make.wordpress.org/core/2025/03/13/more-efficient-block-type-registration-in-6-8/
  * @see https://make.wordpress.org/core/2024/10/17/new-block-type-registration-apis-to-improve-performance-in-wordpress-6-7/
  */
-function cloudfake_block_init() {
+function cdn_error_mockups_block_init() {
 	/**
 	 * Registers the block(s) metadata from the `blocks-manifest.php` and registers the block type(s)
 	 * based on the registered block metadata.
@@ -59,4 +59,4 @@ function cloudfake_block_init() {
 		register_block_type( __DIR__ . "/build/{$block_type}" );
 	}
 }
-add_action( 'init', 'cloudfake_block_init' );
+add_action( 'init', 'cdn_error_mockups_block_init' );

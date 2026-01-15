@@ -1,4 +1,4 @@
-# Cloudfake
+# CDN Error Mockups
 Contributors: hiroshisato, pixelium  
 Donate link: https://github.com/sponsors/sato-jp  
 Tags: block, cloudflare, joke, 404  
@@ -17,7 +17,7 @@ Adds a block that mimics the Cloudflare downtime error screen. With this block, 
 
 This plugin is based on the [cloudflare-error-page](https://github.com/donlon/cloudflare-error-page) project, adapted as a WordPress block for the Gutenberg editor.
 
-**Important Notice:** This plugin is not affiliated with, endorsed by, or connected to Cloudflare, Inc. The name "Cloudfake" is a combination of "Cloud" (referring to cloud services in general) and "Fake" (referring to a fake/parody error page), and is not intended to infringe on any trademarks. This plugin is an independent project created for educational and entertainment purposes.
+**Important Notice:** This plugin is not affiliated with, endorsed by, or connected to Cloudflare, Inc. This plugin is an independent project created for educational and entertainment purposes.
 
 == External services ==
 
@@ -31,7 +31,7 @@ This service is provided by ipify: [terms of use](https://www.ipify.org/terms), 
 
 This section describes how to install the plugin and get it working.
 
-1. Upload the plugin files to the `/wp-content/plugins/cloudfake/` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/cdn-error-mockups/` directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 
 ## Frequently Asked Questions

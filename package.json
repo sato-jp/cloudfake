@@ -1,5 +1,5 @@
 {
-	"name": "cloudfake",
+	"name": "cdn-error-mockups",
 	"version": "1.0.0",
 	"description": "Adds a block that mimics the Cloudflare downtime error screen.",
 	"author": "Hiroshi Sato",

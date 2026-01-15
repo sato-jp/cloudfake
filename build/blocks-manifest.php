@@ -1,12 +1,12 @@
 <?php
 // This file is generated. Do not modify it manually.
 return array(
-	'cloudfake' => array(
+	'cdn-error-mockups' => array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
-		'name' => 'cloudfake/cloudfake',
+		'name' => 'cdn-error-mockups/cloudflare',
 		'version' => '1.0.0',
-		'title' => 'Cloudfake',
+		'title' => 'CDN Error Mockup - Cloudflare',
 		'description' => 'Adds a block that mimics the Cloudflare downtime error screen.',
 		'category' => 'theme',
 		'attributes' => array(
@@ -90,7 +90,7 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
-		'textdomain' => 'cloudfake',
+		'textdomain' => 'cdn-error-mockups',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',
 		'style' => 'file:./style-index.css',

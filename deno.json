@@ -3,7 +3,7 @@
 		"start": "dx wp-scripts start --blocks-manifest",
 		"build": "dx wp-scripts build --blocks-manifest",
 		"env": "dx wp-env start",
-		"env:wp:cli:plugin:check": "dx wp-env run cli wp plugin check cloudfake --exclude-directories='node_modules' --exclude-files='.DS_Store,.gitignore,.wp-env.json,.editorconfig'",
+		"env:wp:cli:plugin:check": "dx wp-env run cli wp plugin check cdn-error-mockups --exclude-directories='node_modules' --exclude-files='.DS_Store,.gitignore,.wp-env.json,.editorconfig'",
 		"format": "dx wp-scripts format",
 		"lint:css": "dx wp-scripts lint-style",
 		"lint:css:fix": "dx wp-scripts lint-style --fix",
