@@ -13,7 +13,7 @@ Adds a block that mimics the Cloudflare downtime error screen.
 
 == Description ==
 
-Adds a block that mimics the Cloudflare downtime error screen. With this block, you can easily create error pages styled just like the official Cloudflare error pages.
+Adds a block that mimics the Cloudflare downtime error screen. Use it to create error pages that look like the official Cloudflare error pages.
 
 This plugin is based on the [cloudflare-error-page](https://github.com/donlon/cloudflare-error-page) project, adapted as a WordPress block for the Gutenberg editor.
 
@@ -21,33 +21,26 @@ This plugin is based on the [cloudflare-error-page](https://github.com/donlon/cl
 
 = External services =
 
-This plugin uses the ipify API service to obtain the visitor's IP address. This is needed to display the IP address when the "Click to reveal" button is clicked in the error page block.
-
-The IP address is only fetched when the user explicitly clicks the "Click to reveal" button. No data is sent to the service; only a GET request is made to retrieve the visitor's public IP address.
-
-This service is provided by ipify: [terms of use](https://www.ipify.org/terms), [privacy policy](https://www.ipify.org/privacy).
+The plugin uses the [ipify](https://www.ipify.org/) API to fetch the visitor’s IP address when they click "Click to reveal" in the block. Only a GET request is made; no other data is sent. See ipify’s [terms of use](https://www.ipify.org/terms) and [privacy policy](https://www.ipify.org/privacy).
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+1. Upload the plugin to `/wp-content/plugins/`, or install it via the WordPress plugins screen.
+2. Activate it from the Plugins screen.
 
-1. Upload the plugin files to the `/wp-content/plugins/cdn-error-mockups/` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress
+== Source Code ==
+
+The plugin’s JavaScript and CSS are built from source. The human-readable source is in the `src/` directory on [GitHub](https://github.com/sato-jp/cdn-error-mockups).
+
+== Contributing ==
+
+Contributions are welcome. Open issues, suggest features, or send pull requests on [GitHub](https://github.com/sato-jp/cdn-error-mockups).
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
-
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
-
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` (or jpg, jpeg, gif).
-2. This is the second screen shot
+Screenshots go in the `/assets` directory (e.g. `screenshot-1.png`).
 
 == Upgrade Notice ==
 
