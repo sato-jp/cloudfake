@@ -3,11 +3,7 @@
 /node_modules
 /src
 /tests
-/.wordpress-org/banner-xx-assets
-/.wordpress-org/icon_xx--assets
-/.wordpress-org/icon.ai
-/.wordpress-org/banner-xx.psd
-/.wordpress-org/icon_xx.psd
+/resource
 .distignore
 .gitignore
 package.json
