@@ -18,7 +18,8 @@
 		"indentWidth": 4,
 		"useTabs": true,
 		"lineWidth": 400,
-		"include": ["deno.json", "package.json", ".wp-env.json"]
+		"include": ["deno.json", "package.json", ".wp-env.json"],
+		"exclude": ["node_modules", ".github"]
 	},
 	"lint": {
 		"rules": {
