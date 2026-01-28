@@ -25,8 +25,18 @@ The plugin uses the [ipify](https://www.ipify.org/) API to fetch the visitor’s
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/`, or install it via the WordPress plugins screen.
-2. Activate it from the Plugins screen.
+= Method 1: Install from WordPress Plugin Directory =
+
+1. Go to **Plugins** > **Add New** in your WordPress admin.
+2. Search for **"CDN Error Mockups"**.
+3. Click **Install Now**, then **Activate**.
+
+= Method 2: Manual Installation =
+
+1. Download the plugin ZIP file from the [WordPress Plugin Directory](https://wordpress.org/plugins/cdn-error-mockups/).
+2. Go to **Plugins** > **Add Plugin** > **Upload Plugin** in your WordPress admin.
+3. Choose the downloaded ZIP file and click **Install Now**.
+4. Activate the plugin from the Plugins screen.
 
 == Source Code ==
 
@@ -40,7 +50,9 @@ Contributions are welcome. Open issues, suggest features, or send pull requests 
 
 == Screenshots ==
 
-Screenshots go in the `/assets` directory (e.g. `screenshot-1.png`).
+1. Block placed in the "404 page" template
+2. Error code and message can be changed in the settings sidebar
+3. The "404 page" shown on the frontend
 
 == Upgrade Notice ==
 
@@ -58,4 +70,4 @@ This is a major release. Please review the changelog for details.
 
 == Credits ==
 
-This plugin is based on the [cloudflare-error-page](https://github.com/donlon/cloudflare-error-page) project by donlon, which is licensed under the MIT License. See [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md) for details.
+This plugin is based on the idea and some code from [cloudflare-error-page](https://github.com/donlon/cloudflare-error-page) by donlon (MIT License). See [THIRD_PARTY_LICENSES.md](https://github.com/sato-jp/cdn-error-mockups/blob/main/THIRD_PARTY_LICENSES.md) for details.
