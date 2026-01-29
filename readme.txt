@@ -46,8 +46,6 @@ The plugin’s JavaScript and CSS are built from source. The human-readable sour
 
 Contributions are welcome. Open issues, suggest features, or send pull requests on [GitHub](https://github.com/sato-jp/cdn-error-mockups).
 
-== Frequently Asked Questions ==
-
 == Screenshots ==
 
 1. Block placed in the "404 page" template

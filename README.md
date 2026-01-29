@@ -46,13 +46,15 @@ The plugin’s JavaScript and CSS are built from source. The human-readable sour
 
 Contributions are welcome. Open issues, suggest features, or send pull requests on [GitHub](https://github.com/sato-jp/cdn-error-mockups).
 
-## Frequently Asked Questions
+<!-- only:wp>
 
 ## Screenshots
 
 1. Block placed in the "404 page" template
 2. Error code and message can be changed in the settings sidebar
 3. The "404 page" shown on the frontend
+
+</only:wp -->
 
 ## Upgrade Notice
 
