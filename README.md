@@ -4,7 +4,7 @@ Donate link: https://github.com/sponsors/sato-jp
 Tags: block, cloudflare, joke, 404  
 Requires at least: 6.9  
 Tested up to: 6.9  
-Stable tag: 1.0.0  
+Stable tag: 1.0.2  
 Requires PHP: 8.0  
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -88,6 +88,15 @@ deno task build
 
 ```bash
 deno task start
+```
+
+### How to Create and Push a Release Tag
+
+To create a new tag and push it to the remote repository, run the following commands:
+
+```bash
+git tag v1.0.2
+git push origin v1.0.2
 ```
 
 <!-- /only:github -->

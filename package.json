@@ -1,6 +1,6 @@
 {
 	"name": "cdn-error-mockups",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "Adds a block that mimics the Cloudflare downtime error screen.",
 	"author": "Hiroshi Sato",
 	"license": "GPL-2.0-or-later",
