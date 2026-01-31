@@ -5,7 +5,7 @@ return array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'cdn-error-mockups/cloudflare',
-		'version' => '1.0.2',
+		'version' => '1.0.3',
 		'title' => 'CDN Error Mockup - Cloudflare',
 		'description' => 'Adds a block that mimics the Cloudflare downtime error screen.',
 		'category' => 'theme',
