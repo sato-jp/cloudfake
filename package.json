@@ -1,23 +1,21 @@
 {
 	"name": "cdn-error-mockups",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Adds a block that mimics the Cloudflare downtime error screen.",
 	"author": "Hiroshi Sato",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"dependencies": {
-		"@wordpress/block-editor": "^15.10.0",
-		"@wordpress/blocks": "^15.10.0",
-		"@wordpress/browserslist-config": "^6.37.0",
-		"@wordpress/components": "^31.0.0",
-		"@wordpress/element": "^6.37.0",
-		"@wordpress/eslint-plugin": "^23.0.0",
-		"@wordpress/i18n": "^6.10.0",
-		"@wordpress/scripts": "^31.2.0",
-		"react": "^19.2.3",
-		"react-dom": "^19.2.3"
-	},
-	"devDependencies": {
-		"@wordpress/env": "^10.37.0"
+		"@wordpress/block-editor": "^15.12.0",
+		"@wordpress/blocks": "^15.12.0",
+		"@wordpress/browserslist-config": "^6.39.0",
+		"@wordpress/components": "^32.1.0",
+		"@wordpress/element": "^6.39.0",
+		"@wordpress/env": "^10.38.0",
+		"@wordpress/eslint-plugin": "^24.1.0",
+		"@wordpress/i18n": "^6.12.0",
+		"@wordpress/scripts": "^31.4.0",
+		"react": "^19.2.4",
+		"react-dom": "^19.2.4"
 	}
 }

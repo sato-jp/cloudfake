@@ -4,7 +4,7 @@ Donate link: https://github.com/sponsors/sato-jp
 Tags: block, cloudflare, joke, 404  
 Requires at least: 6.9  
 Tested up to: 6.9  
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Requires PHP: 8.0  
 License: GPLv2 or later  
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -15,13 +15,23 @@ Adds a block that mimics the Cloudflare downtime error screen.
 
 Adds a block that mimics the Cloudflare downtime error screen. Use it to create error pages that look like the official Cloudflare error pages.
 
+This plugin provides a Gutenberg block that displays a realistic Cloudflare error page mockup, perfect for:
+- Creating custom 404 error pages
+- Building error page templates
+- Adding humorous error messages to your site
+- Testing error page designs
+
+### Features
+
+- **Customizable Error Codes**: Change the error code (e.g., 404, 500, 502) via block settings
+- **Customizable Messages**: Edit the error message text to match your needs
+- **IP Address Display**: Shows visitor IP address when they click "Click to reveal" (uses WordPress REST API, no external services)
+- **Authentic Design**: Faithfully recreates the Cloudflare error page appearance
+- **Easy to Use**: Simple block interface in the Gutenberg editor
+
 This plugin is based on the [cloudflare-error-page](https://github.com/donlon/cloudflare-error-page) project, adapted as a WordPress block for the Gutenberg editor.
 
 **Important Notice:** This plugin is not affiliated with, endorsed by, or connected to Cloudflare, Inc. This plugin is an independent project created for educational and entertainment purposes.
-
-### External services
-
-The plugin uses the [ipify](https://www.ipify.org/) API to fetch the visitor’s IP address when they click "Click to reveal" in the block. Only a GET request is made; no other data is sent. See ipify’s [terms of use](https://www.ipify.org/terms) and [privacy policy](https://www.ipify.org/privacy).
 
 ## Installation
 
@@ -38,13 +48,59 @@ The plugin uses the [ipify](https://www.ipify.org/) API to fetch the visitor’s
 3. Choose the downloaded ZIP file and click **Install Now**.
 4. Activate the plugin from the Plugins screen.
 
+## Usage
+
+1. After installing and activating the plugin, go to any page or post editor in WordPress.
+2. Click the **+** button to add a new block.
+3. Search for **"CDN Error Mockups"** or **"Cloudflare"** and select the block.
+4. The block will appear with default settings. You can customize:
+   - **Error Code**: Change the error code (e.g., 404, 500, 502, 503)
+   - **Error Message**: Edit the error message text
+5. Save or publish your page to see the error mockup on the frontend.
+
+### Example Use Cases
+
+- Add to your site's 404 page template
+- Create a maintenance mode page
+- Use in page templates for error handling
+- Add to custom page templates
+
 ## Source Code
 
 The plugin’s JavaScript and CSS are built from source. The human-readable source is in the `src/` directory on [GitHub](https://github.com/sato-jp/cdn-error-mockups).
 
+## Frequently Asked Questions
+
+### Is this plugin officially supported by Cloudflare?
+
+No. This plugin is not affiliated with, endorsed by, or connected to Cloudflare, Inc. It is an independent project created for educational and entertainment purposes.
+
+### Can I customize the error code and message?
+
+Yes! You can customize both the error code and error message through the block settings sidebar in the Gutenberg editor.
+
+### Does this plugin collect user data?
+
+The plugin displays visitor IP addresses when they click "Click to reveal" using WordPress's built-in REST API endpoint. No external services are used, and no data is sent outside your WordPress installation. The IP address is determined from server variables (Cloudflare headers, proxy headers, or standard remote address).
+
+### What WordPress version is required?
+
+This plugin requires WordPress 6.9 or higher and PHP 8.0 or higher.
+
+### Can I use this on multiple pages?
+
+Yes! You can add the block to any page, post, or template as many times as you need.
+
 ## Contributing
 
-Contributions are welcome. Open issues, suggest features, or send pull requests on [GitHub](https://github.com/sato-jp/cdn-error-mockups).
+Contributions are welcome! Here are ways you can contribute:
+
+- **Report Bugs**: Open an issue on [GitHub](https://github.com/sato-jp/cdn-error-mockups/issues)
+- **Suggest Features**: Share your ideas via GitHub issues
+- **Submit Pull Requests**: Send pull requests with improvements or bug fixes
+- **Improve Documentation**: Help improve the documentation
+
+For more information, visit the [GitHub repository](https://github.com/sato-jp/cdn-error-mockups).
 
 <!-- only:wp>
 
@@ -64,6 +120,10 @@ This is a major release. Please review the changelog for details.
 
 ## Changelog
 
+### 1.0.3
+
+* Current stable version
+
 ### 1.0.0
 
 * Initial release
@@ -72,32 +132,75 @@ This is a major release. Please review the changelog for details.
 
 ## Development
 
+This plugin uses Deno for building and development. Make sure you have Deno installed before proceeding.
+
+### Prerequisites
+
+- [Deno](https://deno.land/) (latest version recommended)
+- Node.js and npm (for WordPress development environment)
+- WordPress development environment (local or remote)
+
 ### Setup
 
-```bash
-deno task build
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sato-jp/cdn-error-mockups.git
+   cd cdn-error-mockups
+   ```
+
+2. Build the plugin:
+   ```bash
+   deno task build
+   ```
 
 ### Build
 
+To build the plugin assets (JavaScript and CSS):
+
 ```bash
 deno task build
 ```
 
+This will compile the source files from `src/` to `build/`.
+
 ### Development Mode
+
+To start development mode with watch functionality:
 
 ```bash
 deno task start
 ```
 
-### How to Create and Push a Release Tag
+This will watch for changes and automatically rebuild the assets.
 
-To create a new tag and push it to the remote repository, run the following commands:
+### Local WordPress Environment
+
+If you're using `.wp-env.json` for local development:
 
 ```bash
-git tag v1.0.2
-git push origin v1.0.2
+deno task env
 ```
+
+Or for Playground runtime:
+
+```bash
+deno task env:playground
+```
+
+**Note:** If you encounter permission errors (EACCES or EPERM) when running wp-env commands in Cursor's integrated terminal, this is due to Cursor's sandbox environment restricting access to files outside the project directory (wp-env stores cache in `~/.wp-env/`). In this case, run the commands in a regular terminal outside of Cursor instead.
+
+The plugin will be automatically loaded. Make changes, rebuild with `deno task build`, and refresh your browser.
+
+### How to Create and Push a Release Tag
+
+To create a new release tag and push it to the remote repository:
+
+```bash
+git tag v1.0.3
+git push origin v1.0.3
+```
+
+Replace `v1.0.3` with your desired version number.
 
 <!-- /only:github -->
 

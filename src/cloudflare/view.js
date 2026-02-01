@@ -99,7 +99,8 @@ function initIpReveal() {
 
 	async function fetchIp() {
 		try {
-			const res = await fetch('https://api.ipify.org?format=json');
+			// Use WordPress REST API endpoint
+			const res = await fetch('/wp-json/cdn-error-mockups/v1/client-ip');
 			if (!res.ok) {
 				return 'Unavailable';
 			}

@@ -3,6 +3,10 @@ on:
     push:
         branches:
             - main
+        paths:
+            - '.wordpress-org/**'
+            - 'readme.txt'
+            - 'README.md'
 jobs:
     main:
         name: Push to main

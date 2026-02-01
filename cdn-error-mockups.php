@@ -5,7 +5,7 @@
  * Description:       Adds a block that mimics the Cloudflare downtime error screen.
  * Requires at least: 6.9
  * Requires PHP:      8.0
- * Version:           1.0.3
+ * Version:           1.0.4
  * Author:            Hiroshi Sato
  * Text Domain:       cdn-error-mockups
  * License:           GPLv2 or later
@@ -60,3 +60,54 @@ function cdn_error_mockups_block_init() {
 	}
 }
 add_action( 'init', 'cdn_error_mockups_block_init' );
+
+/**
+ * Get client IP address from various sources.
+ *
+ * @return string The client IP address or 'Unavailable' if not found.
+ */
+function cdn_error_mockups_get_client_ip() {
+	// Cloudflare.
+	if ( ! empty( $_SERVER['HTTP_CF_CONNECTING_IP'] ) ) {
+		return sanitize_text_field( wp_unslash( $_SERVER['HTTP_CF_CONNECTING_IP'] ) );
+	}
+	// Proxy (X-Forwarded-For).
+	if ( ! empty( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ) {
+		$ips = explode( ',', sanitize_text_field( wp_unslash( $_SERVER['HTTP_X_FORWARDED_FOR'] ) ) );
+		return trim( $ips[0] );
+	}
+	// Standard remote address.
+	if ( ! empty( $_SERVER['REMOTE_ADDR'] ) ) {
+		return sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) );
+	}
+	return 'Unavailable';
+}
+
+/**
+ * Register REST API endpoint for client IP.
+ */
+function cdn_error_mockups_register_rest_routes() {
+	register_rest_route(
+		'cdn-error-mockups/v1',
+		'/client-ip',
+		array(
+			'methods'             => 'GET',
+			'callback'            => 'cdn_error_mockups_rest_client_ip',
+			'permission_callback' => '__return_true',
+		)
+	);
+}
+add_action( 'rest_api_init', 'cdn_error_mockups_register_rest_routes' );
+
+/**
+ * REST API callback for client IP.
+ *
+ * @return WP_REST_Response
+ */
+function cdn_error_mockups_rest_client_ip() {
+	return rest_ensure_response(
+		array(
+			'ip' => cdn_error_mockups_get_client_ip(),
+		)
+	);
+}
